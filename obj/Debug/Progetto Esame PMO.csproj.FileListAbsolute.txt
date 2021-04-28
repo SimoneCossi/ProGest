@@ -1,0 +1,31 @@
+C:\Users\ilsox\Desktop\Università\PMO\Progetto D'esame\Progetto Esame PMO\bin\Debug\Progetto Esame PMO.exe.config
+C:\Users\ilsox\Desktop\Università\PMO\Progetto D'esame\Progetto Esame PMO\bin\Debug\Progetto Esame PMO.exe
+C:\Users\ilsox\Desktop\Università\PMO\Progetto D'esame\Progetto Esame PMO\bin\Debug\Progetto Esame PMO.pdb
+C:\Users\ilsox\Desktop\Università\PMO\Progetto D'esame\Progetto Esame PMO\obj\Debug\Progetto Esame PMO.csprojAssemblyReference.cache
+C:\Users\ilsox\Desktop\Università\PMO\Progetto D'esame\Progetto Esame PMO\obj\Debug\Progetto_Esame_PMO.Properties.Resources.resources
+C:\Users\ilsox\Desktop\Università\PMO\Progetto D'esame\Progetto Esame PMO\obj\Debug\Progetto Esame PMO.csproj.GenerateResource.cache
+C:\Users\ilsox\Desktop\Università\PMO\Progetto D'esame\Progetto Esame PMO\obj\Debug\Progetto Esame PMO.csproj.CoreCompileInputs.cache
+C:\Users\ilsox\Desktop\Università\PMO\Progetto D'esame\Progetto Esame PMO\obj\Debug\Progetto Esame PMO.exe
+C:\Users\ilsox\Desktop\Università\PMO\Progetto D'esame\Progetto Esame PMO\obj\Debug\Progetto Esame PMO.pdb
+C:\Users\ilsox\Desktop\Università\PMO\Progetto D'esame\Progetto Esame PMO\obj\Debug\Progetto_Esame_PMO.FormHome.resources
+C:\Users\ilsox\Desktop\Università\PMO\Progetto D'esame\Progetto Esame PMO\bin\Debug\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\ilsox\Desktop\Università\PMO\Progetto D'esame\Progetto Esame PMO\bin\Debug\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\ilsox\Desktop\Università\PMO\Progetto D'esame\Progetto Esame PMO\bin\Debug\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\ilsox\Desktop\Università\PMO\Progetto D'esame\Progetto Esame PMO\bin\Debug\Microsoft.Data.Sqlite.dll
+C:\Users\ilsox\Desktop\Università\PMO\Progetto D'esame\Progetto Esame PMO\bin\Debug\SQLitePCLRaw.batteries_v2.dll
+C:\Users\ilsox\Desktop\Università\PMO\Progetto D'esame\Progetto Esame PMO\bin\Debug\SQLitePCLRaw.core.dll
+C:\Users\ilsox\Desktop\Università\PMO\Progetto D'esame\Progetto Esame PMO\bin\Debug\SQLitePCLRaw.nativelibrary.dll
+C:\Users\ilsox\Desktop\Università\PMO\Progetto D'esame\Progetto Esame PMO\bin\Debug\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\ilsox\Desktop\Università\PMO\Progetto D'esame\Progetto Esame PMO\bin\Debug\System.Buffers.dll
+C:\Users\ilsox\Desktop\Università\PMO\Progetto D'esame\Progetto Esame PMO\bin\Debug\System.Memory.dll
+C:\Users\ilsox\Desktop\Università\PMO\Progetto D'esame\Progetto Esame PMO\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\ilsox\Desktop\Università\PMO\Progetto D'esame\Progetto Esame PMO\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ilsox\Desktop\Università\PMO\Progetto D'esame\Progetto Esame PMO\bin\Debug\Microsoft.Data.Sqlite.xml
+C:\Users\ilsox\Desktop\Università\PMO\Progetto D'esame\Progetto Esame PMO\bin\Debug\System.Buffers.xml
+C:\Users\ilsox\Desktop\Università\PMO\Progetto D'esame\Progetto Esame PMO\bin\Debug\System.Memory.xml
+C:\Users\ilsox\Desktop\Università\PMO\Progetto D'esame\Progetto Esame PMO\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\ilsox\Desktop\Università\PMO\Progetto D'esame\Progetto Esame PMO\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\ilsox\Desktop\Università\PMO\Progetto D'esame\Progetto Esame PMO\obj\Debug\Progetto Esame PMO.csproj.CopyComplete
+C:\Users\ilsox\Desktop\Università\PMO\Progetto D'esame\Progetto Esame PMO\obj\Debug\Progetto_Esame_PMO.Grafica.FormVino.resources
+C:\Users\ilsox\Desktop\Università\PMO\Progetto D'esame\Progetto Esame PMO\obj\Debug\Progetto_Esame_PMO.Grafica.FormModificaVino.resources
+C:\Users\ilsox\Desktop\Università\PMO\Progetto D'esame\Progetto Esame PMO\obj\Debug\Progetto_Esame_PMO.Grafica.Grafica_Vino.FormAggiungiVino.resources
