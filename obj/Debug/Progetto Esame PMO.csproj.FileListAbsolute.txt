@@ -29,3 +29,6 @@ C:\Users\ilsox\Desktop\Università\PMO\Progetto D'esame\Progetto Esame PMO\obj\D
 C:\Users\ilsox\Desktop\Università\PMO\Progetto D'esame\Progetto Esame PMO\obj\Debug\Progetto_Esame_PMO.Grafica.FormVino.resources
 C:\Users\ilsox\Desktop\Università\PMO\Progetto D'esame\Progetto Esame PMO\obj\Debug\Progetto_Esame_PMO.Grafica.FormModificaVino.resources
 C:\Users\ilsox\Desktop\Università\PMO\Progetto D'esame\Progetto Esame PMO\obj\Debug\Progetto_Esame_PMO.Grafica.Grafica_Vino.FormAggiungiVino.resources
+C:\Users\ilsox\Desktop\Università\PMO\Progetto D'esame\Progetto Esame PMO\obj\Debug\Progetto_Esame_PMO.Grafica.Grafica_Vigneto.FormVigneto.resources
+C:\Users\ilsox\Desktop\Università\PMO\Progetto D'esame\Progetto Esame PMO\obj\Debug\Progetto_Esame_PMO.Grafica.Grafica_Vigneto.FormAggiungiVigneto.resources
+C:\Users\ilsox\Desktop\Università\PMO\Progetto D'esame\Progetto Esame PMO\obj\Debug\Progetto_Esame_PMO.Grafica.Grafica_Vigneto.FormModificaVigneto.resources

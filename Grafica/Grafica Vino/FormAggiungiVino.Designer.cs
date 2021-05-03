@@ -179,7 +179,7 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Vino
             this.tableLayoutPanel1.SetRowSpan(this.ButtonAggiungi, 2);
             this.ButtonAggiungi.Size = new System.Drawing.Size(116, 37);
             this.ButtonAggiungi.TabIndex = 15;
-            this.ButtonAggiungi.Text = "Aggiugni";
+            this.ButtonAggiungi.Text = "Aggiungi";
             this.ButtonAggiungi.UseVisualStyleBackColor = false;
             this.ButtonAggiungi.Click += new System.EventHandler(this.ButtonAggiungi_Click);
             // 
@@ -214,7 +214,7 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Vino
             0,
             0});
             this.numericUpDown1.Minimum = new decimal(new int[] {
-            2015,
+            1980,
             0,
             0,
             0});

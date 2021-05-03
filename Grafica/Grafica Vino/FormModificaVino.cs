@@ -28,27 +28,22 @@ namespace Progetto_Esame_PMO.Grafica
 
             DbVino v = new DbVino();
 
-            // leggo dal databese i dai necessari e li passo ad delle stringhe per poi passarle ai vari textbox che li stamperanno a video
-            string nome = v.SelectElement(id, "nome");
-            textBox1.Text = nome;
+            // lettura dal databese dei dati necessari e passaggio ai vari textbox che li stamperanno a video
+            textBox1.Text = v.SelectElement(id, "nome");
 
-            string anno = v.SelectElement(id, "anno");
-            textBox2.Text = anno;
+            textBox2.Text = v.SelectElement(id, "anno");
 
-            string tipologia = v.SelectElement(id, "tipologia");
-            textBox3.Text = tipologia;
+            textBox3.Text = v.SelectElement(id, "tipologia");
 
-            string vigneto = v.SelectElement(id, "vigneto");
-            textBox4.Text = vigneto;
+            textBox4.Text = v.SelectElement(id, "vigneto");
 
-            string nrbottiglie = v.SelectElement(id, "nrbottiglie");
-            textBox5.Text = nrbottiglie;
+            textBox5.Text = v.SelectElement(id, "nrbottiglie");
+        }// end form
 
-        }
 
+        // evento che elimina l'elemento attuale dal db 
         private void ButtonElimina_Click(object sender, EventArgs e)
         {
-
             // metodo per eliminare un elemento dal database
             DbVino v = new DbVino();
             v.DeleteItem(this.id);
@@ -58,8 +53,7 @@ namespace Progetto_Esame_PMO.Grafica
             FormVino frm = new FormVino(this.home);
             frm.Show();
             this.Dispose();
-
-        }
+        }// end button elimina
 
         // evento in cui viene premuto il bottone con "applica modifiche"
         private void ButtonApplica_Click(object sender, EventArgs e)
@@ -70,10 +64,9 @@ namespace Progetto_Esame_PMO.Grafica
                 DbVino v = new DbVino();
 
                 // conversione di valori da string a int e da decimal a int per eseguire la sottrazione delle bottilgie vendute dal totale
-                string nrbottiglie = v.SelectElement(this.id, "nrbottiglie");
-                int NrBottiglie = int.Parse(nrbottiglie);
-                decimal BottiglieVendute = this.numericUpDownNrBottiglie.Value;
-                decimal NuovoNrBottiglie = NrBottiglie - BottiglieVendute;
+                int nrbottiglie        = int.Parse(v.SelectElement(this.id, "nrbottiglie"));
+                int BottiglieVendute   = decimal.ToInt32(this.numericUpDownNrBottiglie.Value);
+                int NuovoNrBottiglie   = nrbottiglie - BottiglieVendute;
 
                 // metodo chiamato 2 volte per apportare tutte le modifiche
                 v.ModifyItem(this.comboBoxNomeVino.Text, "nome",  this.id);
@@ -105,10 +98,9 @@ namespace Progetto_Esame_PMO.Grafica
                 Console.WriteLine("if3");
 
                 // conversione di valori da string a int e da decimal a int per eseguire la sottrazione delle bottilgie vendute dal totale
-                string nrbottiglie = v.SelectElement(this.id, "nrbottiglie");
-                int NrBottiglie = int.Parse(nrbottiglie);
-                decimal BottiglieVendute = this.numericUpDownNrBottiglie.Value;
-                decimal NuovoNrBottiglie = NrBottiglie - BottiglieVendute;
+                int nrbottiglie = int.Parse(v.SelectElement(this.id, "nrbottiglie"));
+                int BottiglieVendute = decimal.ToInt32(this.numericUpDownNrBottiglie.Value);
+                int NuovoNrBottiglie = nrbottiglie - BottiglieVendute;
 
                 // metodo per modifacare un elemento nel db
                 v.ModifyItem(NuovoNrBottiglie, "nrbottiglie", this.id);
@@ -122,7 +114,7 @@ namespace Progetto_Esame_PMO.Grafica
             
             // nel caso in cui non è stato modificato nessun valore non succede nulla
 
-        }
+        }// end applica modifiche
 
     }
 }

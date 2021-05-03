@@ -25,27 +25,7 @@ namespace Progetto_Esame_PMO
             ////////////////////////////////////////////////////////////
             ////////////AREA DI TEST///////////////////////////////////
             ////////////////////////////////////////////////////////// 
-            /*for (int i = 0; i < 10; i++)
-            {
-                DbVino v = new DbVino();
-                Vino vino = new Vino();
-                vino.SetAnno(5634);
-                vino.SetNome("dio");
-                vino.SetNrbottiglie(65346);
-                vino.SetTipologia("ciano");
-                vino.SetVigneto("buona giornata");
-                v.AddItem(vino);
-            }
-            //v.DeleteTable();
-            */
-            /*
-            List<string> NomiVini = new List<string>();
-            NomiVini = v.Select("nome");
-            for (int i = 0; i < NomiVini.Count; i++)
-            {
-                Console.WriteLine(NomiVini[i]);
-            }
-            */
+            
         }
     }
 }

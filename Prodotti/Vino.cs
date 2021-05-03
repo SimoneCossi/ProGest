@@ -22,13 +22,13 @@ namespace Progetto_Esame_PMO.Prodotti
         }
 
         // dichiarazione dell`atributo `anno`
-        private decimal anno;
+        private int anno;
         // definizione dei metodi per andare a leggere e/o scrivere l`attrubuto `anno`
-        public decimal GetAnno()
+        public int GetAnno()
         {
             return anno;
         }
-        public void SetAnno(decimal value)
+        public void SetAnno(int value)
         {
             anno = value;
         }

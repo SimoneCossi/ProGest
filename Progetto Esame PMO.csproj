@@ -76,6 +76,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Database\DbVigneto.cs" />
     <Compile Include="Database\DbVino.cs" />
     <Compile Include="Database\IDb.cs" />
     <Compile Include="Grafica\FormHome.cs">
@@ -83,6 +84,24 @@
     </Compile>
     <Compile Include="Grafica\FormHome.Designer.cs">
       <DependentUpon>FormHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grafica\Grafica Vigneto\FormAggiungiVigneto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grafica\Grafica Vigneto\FormAggiungiVigneto.Designer.cs">
+      <DependentUpon>FormAggiungiVigneto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grafica\Grafica Vigneto\FormModificaVigneto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grafica\Grafica Vigneto\FormModificaVigneto.Designer.cs">
+      <DependentUpon>FormModificaVigneto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grafica\Grafica Vigneto\FormVigneto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grafica\Grafica Vigneto\FormVigneto.Designer.cs">
+      <DependentUpon>FormVigneto.cs</DependentUpon>
     </Compile>
     <Compile Include="Grafica\Grafica Vino\FormAggiungiVino.cs">
       <SubType>Form</SubType>
@@ -102,11 +121,21 @@
     <Compile Include="Grafica\Grafica Vino\FormModificaVino.Designer.cs">
       <DependentUpon>FormModificaVino.cs</DependentUpon>
     </Compile>
+    <Compile Include="Prodotti\Vigneto.cs" />
     <Compile Include="Prodotti\Vino.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Grafica\FormHome.resx">
       <DependentUpon>FormHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grafica\Grafica Vigneto\FormAggiungiVigneto.resx">
+      <DependentUpon>FormAggiungiVigneto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grafica\Grafica Vigneto\FormModificaVigneto.resx">
+      <DependentUpon>FormModificaVigneto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grafica\Grafica Vigneto\FormVigneto.resx">
+      <DependentUpon>FormVigneto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Grafica\Grafica Vino\FormAggiungiVino.resx">
       <DependentUpon>FormAggiungiVino.cs</DependentUpon>

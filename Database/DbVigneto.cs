@@ -1,22 +1,22 @@
-﻿using System;
+﻿using Microsoft.Data.Sqlite;
+using Progetto_Esame_PMO.Prodotti;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Progetto_Esame_PMO.Prodotti;
-using Microsoft.Data.Sqlite;
-using System.IO;
 using System.Windows.Forms;
 
 namespace Progetto_Esame_PMO.Database
 {
-    // classe in cui vengono definiti i vari metodi dell`interfaccia `IDb` personalizzandoli per la tabella `vini` del database
-    class DbVino : IDb
+    // classe in cui vengono definiti tutti i vari metodi dell'interfaccia IDb per la tabella 'vigneti' del db
+    class DbVigneto : IDb
     {
-        // definizione del metodo che permette di aggiungere un elemento alla tabella `vini` del database
+        // definizione del metodo che permette di aggiungere elementi nekllla tabella 'vigneti' del db
         public void AddItem(object ob)
         {
-            Vino v = (Vino)ob;
+            Vigneto v = (Vigneto)ob;
             // recupero il percorso (path) del database
             string dbpath = Path.GetFullPath("DB_ProGest.db");
             using (SqliteConnection db =
@@ -28,7 +28,7 @@ namespace Progetto_Esame_PMO.Database
                 SqliteCommand insertCommand = new SqliteCommand();
                 insertCommand.Connection = db;
                 // query per inserire i dati
-                insertCommand.CommandText = "INSERT INTO vini VALUES (NULL,'" + v.GetNome() + "'," + v.GetAnno() + ",'" + v.GetTipologia() + "','" + v.GetVigneto() + "'," + v.GetNrbottiglie() + ");";
+                insertCommand.CommandText = "INSERT INTO vigneti VALUES (NULL,'" + v.GetNome() + "'," + v.GetNrVitiMorte() + ")";
                 insertCommand.ExecuteReader();
 
                 // chiudo il database
@@ -50,7 +50,7 @@ namespace Progetto_Esame_PMO.Database
                 SqliteCommand insertCommand = new SqliteCommand();
                 insertCommand.Connection = db;
                 // query per eliminare un elemento 
-                insertCommand.CommandText = "DELETE FROM vini WHERE id = " + id.Text ;
+                insertCommand.CommandText = "DELETE FROM vigneti WHERE id = " + id.Text;
                 insertCommand.ExecuteReader();
 
                 // chiudo il database
@@ -58,7 +58,7 @@ namespace Progetto_Esame_PMO.Database
             }
         }// end metodo DeleteItem
 
-        // definizione del metodo che permette di ripulire l'intera tabella 
+        // definizione del metedo che permette di eliminare tutti gli elementi dalla tabella
         public void DeleteTable()
         {
             // recupero il percorso (path) del database
@@ -72,7 +72,7 @@ namespace Progetto_Esame_PMO.Database
                 SqliteCommand insertCommand = new SqliteCommand();
                 insertCommand.Connection = db;
                 // query per ripulire completamente una tabella vini e la tabella utilizzata per gli id delle altre tabelle
-                insertCommand.CommandText = "DELETE FROM vini; DELETE FROM sqlite_sequence WHERE name = 'vini'";
+                insertCommand.CommandText = "DELETE FROM vigneti; DELETE FROM sqlite_sequence WHERE name = 'vigneti'";
                 insertCommand.ExecuteReader();
 
                 // chiudo il database
@@ -80,7 +80,7 @@ namespace Progetto_Esame_PMO.Database
             }
         }// end metodo DeleteTable
 
-        // definizione del metodo che permette di modificare un elemento 
+        // definizione del metodo che permette di modificare un elemento
         public void ModifyItem(object ob, string nomeColonna, ListViewItem.ListViewSubItem id)
         {
             // recupero il percorso (path) del database
@@ -94,7 +94,7 @@ namespace Progetto_Esame_PMO.Database
                 SqliteCommand insertCommand = new SqliteCommand();
                 insertCommand.Connection = db;
                 // query per modificare i dati
-                insertCommand.CommandText = "UPDATE vini SET " + nomeColonna + " = '" + ob + "' WHERE id = " + id.Text ;
+                insertCommand.CommandText = "UPDATE vigneti SET " + nomeColonna + " = '" + ob + "' WHERE id = " + id.Text;
                 insertCommand.ExecuteReader();
 
                 // chiudo il database
@@ -102,13 +102,13 @@ namespace Progetto_Esame_PMO.Database
             }
         }// end metodo ModifyItem
 
-        // definizione del metodo che mi restituisce il nome della tabella
+        // definizione del metodo che ritorna il nome della tabella
         public string NameTable()
         {
-            return "vini";
+            return "vigneti";
         }// end metodo NameTable
 
-        // definizione del metodo per ottenere una lista di tutti gli elementi del db
+        // definiozne del metodo che ritorna tutti gli elementi del db
         public List<string> Select(string nomeColonna)
         {
             List<string> m = new List<string>();
@@ -123,7 +123,7 @@ namespace Progetto_Esame_PMO.Database
                 insertCommand.Connection = db;
 
                 // query per cercare gli elementi
-                insertCommand.CommandText = "SELECT " + nomeColonna + " FROM vini ORDER BY id";
+                insertCommand.CommandText = "SELECT " + nomeColonna + " FROM vigneti ORDER BY id";
                 SqliteDataReader reader = insertCommand.ExecuteReader();
                 if (reader.HasRows)
                 {
@@ -142,8 +142,7 @@ namespace Progetto_Esame_PMO.Database
             return m;
         }// end metodo Select
 
-
-        // definizione del metodo che restituisce unicalmente gli elementi del db
+        // definizione del metodo che restituisce senza ripetizioni gli elementi del db
         public List<string> SelectDistinct(string nomeColonna)
         {
             List<string> m = new List<string>();
@@ -158,7 +157,7 @@ namespace Progetto_Esame_PMO.Database
                 insertCommand.Connection = db;
 
                 // query per cercare gli elementi
-                insertCommand.CommandText = "SELECT DISTINCT " + nomeColonna + " FROM vini ORDER BY id";
+                insertCommand.CommandText = "SELECT DISTINCT " + nomeColonna + " FROM vigneti ORDER BY id";
                 SqliteDataReader reader = insertCommand.ExecuteReader();
                 if (reader.HasRows)
                 {
@@ -193,7 +192,7 @@ namespace Progetto_Esame_PMO.Database
                 insertCommand.Connection = db;
 
                 // query per cercare gli elementi
-                insertCommand.CommandText = "SELECT " + nomecolonna + " FROM vini WHERE id = " + id.Text;
+                insertCommand.CommandText = "SELECT " + nomecolonna + " FROM vigneti WHERE id = " + id.Text;
                 SqliteDataReader reader = insertCommand.ExecuteReader();
                 reader.Read();
                 m = reader.GetString(0);
@@ -203,5 +202,5 @@ namespace Progetto_Esame_PMO.Database
             }
             return m;
         }// end metodo SelectElement
-    }// edn DbVino
+    }// end DbVigneto
 }

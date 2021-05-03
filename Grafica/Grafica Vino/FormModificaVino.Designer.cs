@@ -360,9 +360,9 @@ namespace Progetto_Esame_PMO.Grafica
             this.comboBoxNomeVino.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple;
             this.comboBoxNomeVino.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxNomeVino.FormattingEnabled = true;
-            this.comboBoxNomeVino.Location = new System.Drawing.Point(24, 83);
+            this.comboBoxNomeVino.Location = new System.Drawing.Point(13, 83);
             this.comboBoxNomeVino.Name = "comboBoxNomeVino";
-            this.comboBoxNomeVino.Size = new System.Drawing.Size(141, 32);
+            this.comboBoxNomeVino.Size = new System.Drawing.Size(162, 32);
             this.comboBoxNomeVino.TabIndex = 19;
             // 
             // tableLayoutPanel8

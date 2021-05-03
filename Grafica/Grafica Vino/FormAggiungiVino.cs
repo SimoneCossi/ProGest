@@ -21,10 +21,11 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Vino
         {
             InitializeComponent();
 
-            this.formvino = formvino;
-            this.home = home;
+            this.formvino   = formvino;
+            this.home       = home;
 
-            DbVino v = new DbVino();
+            DbVino v    = new DbVino();
+            DbVigneto w = new DbVigneto();
 
             // liste di stringhe per inserire nei vari combobox valori già esistenti
             List<string> NomiVini = new List<string>();
@@ -33,12 +34,8 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Vino
             List<string> TipologiaVini = new List<string>();
             TipologiaVini = v.SelectDistinct("tipologia");
 
-            // trasformarlo per prendere i nomi dal db viogneti
-            // List<string> VignetoVini = new List<string>();
-            // DbVigneti vigneti = new DbVigneti("nome");
-            // VignetoVini = vigneti.SelectDistinct("nome");
             List<string> VignetoVini = new List<string>();
-            VignetoVini = v.SelectDistinct("vigneto");
+            VignetoVini = w.SelectDistinct("nome");
 
             List<string> NrBottiglieVini = new List<string>();
             NrBottiglieVini = v.SelectDistinct("nrbottiglie");
@@ -50,7 +47,7 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Vino
             }
 
             // ciclo che aggiunge le tipologie già presenti nel db nel combobox tipologia
-            for (int i =0; i < TipologiaVini.Count; i++)
+            for (int i = 0; i < TipologiaVini.Count; i++)
             {
                 comboBoxTipologia.Items.Add(TipologiaVini[i]);
             }
@@ -76,18 +73,19 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Vino
         private void ButtonAggiungi_Click(object sender, EventArgs e)
         {
             // if che fa in modo che il pulsante non fgaccia nulla finchè l'utente non avrà inserito tutti i dati
-            if( this.comboBoxNome.Text.ToString()      != "" && 
-                this.comboBoxTipologia.Text.ToString() != "" &&
-                this.comboBoxVigneto.Text.ToString()   != "" &&
-                this.comboBoxBottiglie.Text.ToString() != "" )
+            if( this.comboBoxNome.Text      != "" && 
+                this.comboBoxTipologia.Text != "" &&
+                this.comboBoxVigneto.Text   != "" &&
+                this.comboBoxBottiglie.Text != "" )
             {
-                // creo un oggetto di tipo vino e definisco i suoi attributi in modo dda passare alla query per aggiungere l'elemento solo un oggetto e non tante stringhe
+                // creazione di un oggetto di tipo vino e deefinizione di tutti i suoi attributi in modo da passare alla
+                // query solo un oggetto e non tante stringhe che dovranno pure essere in ordine corretto
                 Vino vino = new Vino();
-                vino.SetNome(this.comboBoxNome.Text.ToString());
-                vino.SetAnno(this.numericUpDown1.Value);
-                vino.SetTipologia(this.comboBoxTipologia.Text.ToString());
-                vino.SetVigneto(this.comboBoxVigneto.Text.ToString());
-                vino.SetNrbottiglie(int.Parse(this.comboBoxBottiglie.Text.ToString()));
+                vino.SetNome(this.comboBoxNome.Text);
+                vino.SetAnno(decimal.ToInt16(this.numericUpDown1.Value));
+                vino.SetTipologia(this.comboBoxTipologia.Text);
+                vino.SetVigneto(this.comboBoxVigneto.Text);
+                vino.SetNrbottiglie(int.Parse(this.comboBoxBottiglie.Text));
 
                 DbVino v = new DbVino();
                 v.AddItem(vino);

@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using Progetto_Esame_PMO.Database;
 using Progetto_Esame_PMO.Prodotti;
 using Progetto_Esame_PMO.Grafica;
-
+using Progetto_Esame_PMO.Grafica.Grafica_Vigneto;
 
 namespace Progetto_Esame_PMO
 {
@@ -25,7 +25,9 @@ namespace Progetto_Esame_PMO
 
             // aggiungo i vari nomi degli elementi alla stringa
             DbVino v = new DbVino();
+            DbVigneto w = new DbVigneto();
             righe.Add(v.NameTable());
+            righe.Add(w.NameTable());
 
 
             // ciclo che aggiunge al menu di scelta i vari nomi inseriti nella stringa 'righe'
@@ -38,7 +40,7 @@ namespace Progetto_Esame_PMO
 
         }
 
-        // eventi del bottone 'Apri'
+        // evento del button apri
         private void ButtonApri_Click(object sender, EventArgs e)
         {
             // leggo cosa è stato selezionato allìnterno del 'tableLayoutPanelProdotti'
@@ -46,19 +48,22 @@ namespace Progetto_Esame_PMO
             {
                 // caso in cui viene scelto di visualizzare i vini
                 case "vini":
-                    // apro il form dove viene viusalizzato il database del vino
+                    // apertura del form dove vengono visualizzati i dati nella tabella vini del db
                     FormVino v = new FormVino(this);
                     this.Hide();
                     v.Show();
                     break;
 
+                case "vigneti":
+                    // apertura del form dove vengono visualizzati i dati della tabella vigneti del db
+                    FormVigneto w = new FormVigneto(this);
+                    this.Hide();
+                    w.Show();
+                    break;
 
-            }
-        }
 
-        private void VisualizzaTabella_SelectedIndexChanged(object sender, EventArgs e)
-        {
 
+            }// end button apri
         }
     }
 }
