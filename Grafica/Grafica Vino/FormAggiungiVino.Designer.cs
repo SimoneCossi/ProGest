@@ -88,6 +88,7 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Vino
             // comboBoxVigneto
             // 
             this.comboBoxVigneto.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.comboBoxVigneto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxVigneto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxVigneto.FormattingEnabled = true;
             this.comboBoxVigneto.Location = new System.Drawing.Point(589, 108);

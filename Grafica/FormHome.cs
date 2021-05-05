@@ -11,6 +11,7 @@ using Progetto_Esame_PMO.Database;
 using Progetto_Esame_PMO.Prodotti;
 using Progetto_Esame_PMO.Grafica;
 using Progetto_Esame_PMO.Grafica.Grafica_Vigneto;
+using Progetto_Esame_PMO.Grafica.Grafica_Marmellata;
 
 namespace Progetto_Esame_PMO
 {
@@ -26,8 +27,10 @@ namespace Progetto_Esame_PMO
             // aggiungo i vari nomi degli elementi alla stringa
             DbVino v = new DbVino();
             DbVigneto w = new DbVigneto();
+            DbMarmellata m = new DbMarmellata();
             righe.Add(v.NameTable());
             righe.Add(w.NameTable());
+            righe.Add(m.NameTable());
 
 
             // ciclo che aggiunge al menu di scelta i vari nomi inseriti nella stringa 'righe'
@@ -60,6 +63,13 @@ namespace Progetto_Esame_PMO
                     this.Hide();
                     w.Show();
                     break;
+                case "marmellate":
+                    // apertura del form dove vengono visualizzati i dati della tabella marmellate del db
+                    FormMarmellata m = new FormMarmellata(this);
+                    this.Hide();
+                    m.Show();
+                    break;
+
 
 
 

@@ -76,6 +76,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Database\DbMarmellata.cs" />
     <Compile Include="Database\DbVigneto.cs" />
     <Compile Include="Database\DbVino.cs" />
     <Compile Include="Database\IDb.cs" />
@@ -84,6 +85,18 @@
     </Compile>
     <Compile Include="Grafica\FormHome.Designer.cs">
       <DependentUpon>FormHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grafica\Grafica Marmellata\FormAggiungiMarmellata.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grafica\Grafica Marmellata\FormAggiungiMarmellata.Designer.cs">
+      <DependentUpon>FormAggiungiMarmellata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grafica\Grafica Marmellata\FormMarmellata.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grafica\Grafica Marmellata\FormMarmellata.Designer.cs">
+      <DependentUpon>FormMarmellata.cs</DependentUpon>
     </Compile>
     <Compile Include="Grafica\Grafica Vigneto\FormAggiungiVigneto.cs">
       <SubType>Form</SubType>
@@ -121,12 +134,19 @@
     <Compile Include="Grafica\Grafica Vino\FormModificaVino.Designer.cs">
       <DependentUpon>FormModificaVino.cs</DependentUpon>
     </Compile>
+    <Compile Include="Prodotti\Marmellata.cs" />
     <Compile Include="Prodotti\Vigneto.cs" />
     <Compile Include="Prodotti\Vino.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Grafica\FormHome.resx">
       <DependentUpon>FormHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grafica\Grafica Marmellata\FormAggiungiMarmellata.resx">
+      <DependentUpon>FormAggiungiMarmellata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grafica\Grafica Marmellata\FormMarmellata.resx">
+      <DependentUpon>FormMarmellata.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Grafica\Grafica Vigneto\FormAggiungiVigneto.resx">
       <DependentUpon>FormAggiungiVigneto.cs</DependentUpon>

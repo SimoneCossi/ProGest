@@ -15,6 +15,7 @@ namespace Progetto_Esame_PMO.Grafica
     public partial class FormVino : Form
     {
         private FormHome home; 
+
         public FormVino(FormHome home)
         {
             InitializeComponent();
@@ -63,15 +64,6 @@ namespace Progetto_Esame_PMO.Grafica
         }// end OnClosed
 
 
-        // evento che apre un form dove poter modificare l'elemento selezionato
-        private void listViewDettagli_DoubleClick(object sender, EventArgs e)
-        {
-            ListView res = (ListView)sender; 
-            FormModificaVino v = new FormModificaVino(res.SelectedItems[0].SubItems[5], this, this.home);
-            v.Show();
-        }// end doubleclick
-
-
         // evento che apre un form dove è possibile aggiungere un vino
         private void ButtonAggiungi_Click(object sender, EventArgs e)
         {
@@ -84,5 +76,14 @@ namespace Progetto_Esame_PMO.Grafica
         {
 
         }
+
+
+        // evento che apre un form dove poter modificare l'elemento selezionato
+        private void listViewDettagli_DoubleClick(object sender, EventArgs e)
+        {
+            ListView res = (ListView)sender;
+            FormModificaVino v = new FormModificaVino(res.SelectedItems[0].SubItems[5], this, this.home);
+            v.Show();
+        }// end doubleclick
     }
 }

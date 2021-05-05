@@ -21,8 +21,8 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Vino
         {
             InitializeComponent();
 
-            this.formvino   = formvino;
-            this.home       = home;
+            this.formvino  = formvino;
+            this.home      = home;
 
             DbVino v    = new DbVino();
             DbVigneto w = new DbVigneto();
@@ -69,10 +69,10 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Vino
 
 
 
-
+        // evento che aggiunge un elemento al db e chiude il form corrente tornando a quello precedente
         private void ButtonAggiungi_Click(object sender, EventArgs e)
         {
-            // if che fa in modo che il pulsante non fgaccia nulla finchè l'utente non avrà inserito tutti i dati
+            // if che fa in modo che il pulsante non faccia nulla finchè l'utente non avrà inserito tutti i dati
             if( this.comboBoxNome.Text      != "" && 
                 this.comboBoxTipologia.Text != "" &&
                 this.comboBoxVigneto.Text   != "" &&

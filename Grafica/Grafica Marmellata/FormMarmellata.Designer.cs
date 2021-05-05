@@ -1,7 +1,7 @@
 ﻿
-namespace Progetto_Esame_PMO.Grafica
+namespace Progetto_Esame_PMO.Grafica.Grafica_Marmellata
 {
-    partial class FormVino
+    partial class FormMarmellata
     {
         /// <summary>
         /// Required designer variable.
@@ -19,7 +19,6 @@ namespace Progetto_Esame_PMO.Grafica
                 components.Dispose();
             }
             base.Dispose(disposing);
-
         }
 
         #region Windows Form Designer generated code
@@ -30,16 +29,72 @@ namespace Progetto_Esame_PMO.Grafica
         /// </summary>
         private void InitializeComponent()
         {
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.listViewDettagli = new System.Windows.Forms.ListView();
-            this.columnHeaderNome = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderFrutto = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeaderAnno = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeaderTipologia = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeaderVigneto = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeaderNrBottiglie = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderDimensione = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderNrBarattoli = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.ButtonAggiungi = new System.Windows.Forms.Button();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // listViewDettagli
+            // 
+            this.listViewDettagli.AllowColumnReorder = true;
+            this.listViewDettagli.BackColor = System.Drawing.SystemColors.Desktop;
+            this.listViewDettagli.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeaderFrutto,
+            this.columnHeaderAnno,
+            this.columnHeaderDimensione,
+            this.columnHeaderNrBarattoli});
+            this.tableLayoutPanel1.SetColumnSpan(this.listViewDettagli, 2);
+            this.listViewDettagli.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listViewDettagli.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listViewDettagli.ForeColor = System.Drawing.SystemColors.Window;
+            this.listViewDettagli.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.listViewDettagli.HideSelection = false;
+            this.listViewDettagli.Location = new System.Drawing.Point(3, 70);
+            this.listViewDettagli.Name = "listViewDettagli";
+            this.listViewDettagli.Size = new System.Drawing.Size(794, 377);
+            this.listViewDettagli.TabIndex = 5;
+            this.listViewDettagli.UseCompatibleStateImageBehavior = false;
+            this.listViewDettagli.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeaderFrutto
+            // 
+            this.columnHeaderFrutto.Text = "Frutto";
+            this.columnHeaderFrutto.Width = 127;
+            // 
+            // columnHeaderAnno
+            // 
+            this.columnHeaderAnno.Text = "Anno";
+            this.columnHeaderAnno.Width = 104;
+            // 
+            // columnHeaderDimensione
+            // 
+            this.columnHeaderDimensione.Text = "Dimensione Barattolo (g)";
+            this.columnHeaderDimensione.Width = 244;
+            // 
+            // columnHeaderNrBarattoli
+            // 
+            this.columnHeaderNrBarattoli.Text = "Nr Barattoli";
+            this.columnHeaderNrBarattoli.Width = 208;
+            // 
+            // ButtonAggiungi
+            // 
+            this.ButtonAggiungi.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ButtonAggiungi.BackColor = System.Drawing.SystemColors.Window;
+            this.ButtonAggiungi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ButtonAggiungi.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonAggiungi.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.ButtonAggiungi.Location = new System.Drawing.Point(100, 17);
+            this.ButtonAggiungi.Name = "ButtonAggiungi";
+            this.ButtonAggiungi.Size = new System.Drawing.Size(199, 33);
+            this.ButtonAggiungi.TabIndex = 4;
+            this.ButtonAggiungi.Text = "Aggiungi Marmellata";
+            this.ButtonAggiungi.UseVisualStyleBackColor = false;
+            this.ButtonAggiungi.Click += new System.EventHandler(this.ButtonAggiungi_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -55,85 +110,20 @@ namespace Progetto_Esame_PMO.Grafica
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(880, 401);
-            this.tableLayoutPanel1.TabIndex = 0;
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 450);
+            this.tableLayoutPanel1.TabIndex = 1;
             // 
-            // listViewDettagli
-            // 
-            this.listViewDettagli.AllowColumnReorder = true;
-            this.listViewDettagli.BackColor = System.Drawing.SystemColors.Desktop;
-            this.listViewDettagli.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeaderNome,
-            this.columnHeaderAnno,
-            this.columnHeaderTipologia,
-            this.columnHeaderVigneto,
-            this.columnHeaderNrBottiglie});
-            this.tableLayoutPanel1.SetColumnSpan(this.listViewDettagli, 2);
-            this.listViewDettagli.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listViewDettagli.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listViewDettagli.ForeColor = System.Drawing.SystemColors.Window;
-            this.listViewDettagli.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.listViewDettagli.HideSelection = false;
-            this.listViewDettagli.Location = new System.Drawing.Point(3, 63);
-            this.listViewDettagli.Name = "listViewDettagli";
-            this.listViewDettagli.Size = new System.Drawing.Size(874, 335);
-            this.listViewDettagli.TabIndex = 5;
-            this.listViewDettagli.UseCompatibleStateImageBehavior = false;
-            this.listViewDettagli.View = System.Windows.Forms.View.Details;
-            this.listViewDettagli.DoubleClick += new System.EventHandler(this.listViewDettagli_DoubleClick);
-            // 
-            // columnHeaderNome
-            // 
-            this.columnHeaderNome.Text = "Nome Vino";
-            this.columnHeaderNome.Width = 162;
-            // 
-            // columnHeaderAnno
-            // 
-            this.columnHeaderAnno.Text = "Anno";
-            this.columnHeaderAnno.Width = 154;
-            // 
-            // columnHeaderTipologia
-            // 
-            this.columnHeaderTipologia.Text = "Tipologia";
-            this.columnHeaderTipologia.Width = 154;
-            // 
-            // columnHeaderVigneto
-            // 
-            this.columnHeaderVigneto.Text = "Vigneto";
-            this.columnHeaderVigneto.Width = 163;
-            // 
-            // columnHeaderNrBottiglie
-            // 
-            this.columnHeaderNrBottiglie.Text = "Nr Bottiglie";
-            this.columnHeaderNrBottiglie.Width = 154;
-            // 
-            // ButtonAggiungi
-            // 
-            this.ButtonAggiungi.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.ButtonAggiungi.BackColor = System.Drawing.SystemColors.Window;
-            this.ButtonAggiungi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ButtonAggiungi.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonAggiungi.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.ButtonAggiungi.Location = new System.Drawing.Point(147, 13);
-            this.ButtonAggiungi.Name = "ButtonAggiungi";
-            this.ButtonAggiungi.Size = new System.Drawing.Size(145, 33);
-            this.ButtonAggiungi.TabIndex = 4;
-            this.ButtonAggiungi.Text = "Aggiungi Vino";
-            this.ButtonAggiungi.UseVisualStyleBackColor = false;
-            this.ButtonAggiungi.Click += new System.EventHandler(this.ButtonAggiungi_Click);
-            // 
-            // FormVino
+            // FormMarmellata
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Desktop;
-            this.ClientSize = new System.Drawing.Size(880, 401);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.tableLayoutPanel1);
             this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Name = "FormVino";
+            this.Name = "FormMarmellata";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ProGest - Vino";
-            this.Load += new System.EventHandler(this.FormVino_Load);
+            this.Text = "ProGest - Marmellata";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -141,13 +131,12 @@ namespace Progetto_Esame_PMO.Grafica
 
         #endregion
 
+        private System.Windows.Forms.ListView listViewDettagli;
+        private System.Windows.Forms.ColumnHeader columnHeaderFrutto;
+        private System.Windows.Forms.ColumnHeader columnHeaderAnno;
+        private System.Windows.Forms.ColumnHeader columnHeaderDimensione;
+        private System.Windows.Forms.ColumnHeader columnHeaderNrBarattoli;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button ButtonAggiungi;
-        private System.Windows.Forms.ListView listViewDettagli;
-        private System.Windows.Forms.ColumnHeader columnHeaderNome;
-        private System.Windows.Forms.ColumnHeader columnHeaderAnno;
-        private System.Windows.Forms.ColumnHeader columnHeaderTipologia;
-        private System.Windows.Forms.ColumnHeader columnHeaderVigneto;
-        private System.Windows.Forms.ColumnHeader columnHeaderNrBottiglie;
     }
 }
