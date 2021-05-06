@@ -56,10 +56,11 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Marmellata
             this.listViewDettagli.HideSelection = false;
             this.listViewDettagli.Location = new System.Drawing.Point(3, 70);
             this.listViewDettagli.Name = "listViewDettagli";
-            this.listViewDettagli.Size = new System.Drawing.Size(794, 377);
+            this.listViewDettagli.Size = new System.Drawing.Size(695, 377);
             this.listViewDettagli.TabIndex = 5;
             this.listViewDettagli.UseCompatibleStateImageBehavior = false;
             this.listViewDettagli.View = System.Windows.Forms.View.Details;
+            this.listViewDettagli.DoubleClick += new System.EventHandler(this.listViewDettagli_DoubleClick);
             // 
             // columnHeaderFrutto
             // 
@@ -88,7 +89,7 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Marmellata
             this.ButtonAggiungi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ButtonAggiungi.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonAggiungi.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.ButtonAggiungi.Location = new System.Drawing.Point(100, 17);
+            this.ButtonAggiungi.Location = new System.Drawing.Point(75, 17);
             this.ButtonAggiungi.Name = "ButtonAggiungi";
             this.ButtonAggiungi.Size = new System.Drawing.Size(199, 33);
             this.ButtonAggiungi.TabIndex = 4;
@@ -110,7 +111,7 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Marmellata
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 450);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(701, 450);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // FormMarmellata
@@ -118,7 +119,7 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Marmellata
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Desktop;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(701, 450);
             this.Controls.Add(this.tableLayoutPanel1);
             this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.Name = "FormMarmellata";

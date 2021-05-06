@@ -65,5 +65,14 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Marmellata
             this.home.Show();
             base.OnClosed(e);
         }// end OnClosed
+
+
+        // evento che apre un form che permette di modifcare l'elemento su cui si è premuto per due volte 
+        private void listViewDettagli_DoubleClick(object sender, EventArgs e)
+        {
+            ListView res = (ListView)sender;
+            FormModificaMarmellata m = new FormModificaMarmellata(res.SelectedItems[0].SubItems[4], this, this.home);
+            m.Show();
+        }// end doubleclick
     }
 }

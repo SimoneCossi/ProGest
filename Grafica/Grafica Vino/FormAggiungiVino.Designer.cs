@@ -39,10 +39,13 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Vino
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.ButtonAggiungi = new System.Windows.Forms.Button();
             this.comboBoxNome = new System.Windows.Forms.ComboBox();
-            this.comboBoxBottiglie = new System.Windows.Forms.ComboBox();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.comboBoxBottiglie = new System.Windows.Forms.ComboBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -63,8 +66,8 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Vino
             this.tableLayoutPanel1.Controls.Add(this.textBox4, 4, 0);
             this.tableLayoutPanel1.Controls.Add(this.ButtonAggiungi, 5, 0);
             this.tableLayoutPanel1.Controls.Add(this.comboBoxNome, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.comboBoxBottiglie, 4, 1);
             this.tableLayoutPanel1.Controls.Add(this.numericUpDown1, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 4, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -72,7 +75,7 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Vino
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1123, 211);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1123, 228);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // comboBoxTipologia
@@ -80,7 +83,7 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Vino
             this.comboBoxTipologia.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.comboBoxTipologia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxTipologia.FormattingEnabled = true;
-            this.comboBoxTipologia.Location = new System.Drawing.Point(402, 108);
+            this.comboBoxTipologia.Location = new System.Drawing.Point(402, 117);
             this.comboBoxTipologia.Name = "comboBoxTipologia";
             this.comboBoxTipologia.Size = new System.Drawing.Size(130, 28);
             this.comboBoxTipologia.TabIndex = 21;
@@ -91,7 +94,7 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Vino
             this.comboBoxVigneto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxVigneto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxVigneto.FormattingEnabled = true;
-            this.comboBoxVigneto.Location = new System.Drawing.Point(589, 108);
+            this.comboBoxVigneto.Location = new System.Drawing.Point(589, 117);
             this.comboBoxVigneto.Name = "comboBoxVigneto";
             this.comboBoxVigneto.Size = new System.Drawing.Size(130, 28);
             this.comboBoxVigneto.TabIndex = 19;
@@ -103,7 +106,7 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Vino
             this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox6.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox6.Location = new System.Drawing.Point(3, 41);
+            this.textBox6.Location = new System.Drawing.Point(3, 45);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(181, 23);
             this.textBox6.TabIndex = 10;
@@ -117,7 +120,7 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Vino
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox1.Location = new System.Drawing.Point(190, 41);
+            this.textBox1.Location = new System.Drawing.Point(190, 45);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(181, 23);
             this.textBox1.TabIndex = 11;
@@ -131,7 +134,7 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Vino
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox3.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox3.Location = new System.Drawing.Point(377, 38);
+            this.textBox3.Location = new System.Drawing.Point(377, 43);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(181, 28);
@@ -146,7 +149,7 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Vino
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox2.Location = new System.Drawing.Point(564, 39);
+            this.textBox2.Location = new System.Drawing.Point(564, 44);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(181, 26);
@@ -161,7 +164,7 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Vino
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox4.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox4.Location = new System.Drawing.Point(751, 39);
+            this.textBox4.Location = new System.Drawing.Point(751, 44);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(181, 26);
@@ -175,7 +178,7 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Vino
             this.ButtonAggiungi.BackColor = System.Drawing.SystemColors.Control;
             this.ButtonAggiungi.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonAggiungi.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.ButtonAggiungi.Location = new System.Drawing.Point(971, 87);
+            this.ButtonAggiungi.Location = new System.Drawing.Point(971, 95);
             this.ButtonAggiungi.Name = "ButtonAggiungi";
             this.tableLayoutPanel1.SetRowSpan(this.ButtonAggiungi, 2);
             this.ButtonAggiungi.Size = new System.Drawing.Size(116, 37);
@@ -189,26 +192,16 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Vino
             this.comboBoxNome.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.comboBoxNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxNome.FormattingEnabled = true;
-            this.comboBoxNome.Location = new System.Drawing.Point(28, 108);
+            this.comboBoxNome.Location = new System.Drawing.Point(28, 117);
             this.comboBoxNome.Name = "comboBoxNome";
             this.comboBoxNome.Size = new System.Drawing.Size(130, 28);
             this.comboBoxNome.TabIndex = 16;
-            // 
-            // comboBoxBottiglie
-            // 
-            this.comboBoxBottiglie.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.comboBoxBottiglie.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxBottiglie.FormattingEnabled = true;
-            this.comboBoxBottiglie.Location = new System.Drawing.Point(776, 108);
-            this.comboBoxBottiglie.Name = "comboBoxBottiglie";
-            this.comboBoxBottiglie.Size = new System.Drawing.Size(130, 28);
-            this.comboBoxBottiglie.TabIndex = 17;
             // 
             // numericUpDown1
             // 
             this.numericUpDown1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown1.Location = new System.Drawing.Point(220, 108);
+            this.numericUpDown1.Location = new System.Drawing.Point(220, 117);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             2500,
             0,
@@ -228,12 +221,52 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Vino
             0,
             0});
             // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 1;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.Controls.Add(this.textBox5, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.comboBoxBottiglie, 0, 0);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(751, 117);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 2;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(181, 108);
+            this.tableLayoutPanel2.TabIndex = 22;
+            // 
+            // comboBoxBottiglie
+            // 
+            this.comboBoxBottiglie.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.comboBoxBottiglie.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxBottiglie.FormattingEnabled = true;
+            this.comboBoxBottiglie.Location = new System.Drawing.Point(25, 3);
+            this.comboBoxBottiglie.Name = "comboBoxBottiglie";
+            this.comboBoxBottiglie.Size = new System.Drawing.Size(130, 28);
+            this.comboBoxBottiglie.TabIndex = 18;
+            // 
+            // textBox5
+            // 
+            this.textBox5.BackColor = System.Drawing.SystemColors.Desktop;
+            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox5.ForeColor = System.Drawing.SystemColors.Window;
+            this.textBox5.Location = new System.Drawing.Point(3, 57);
+            this.textBox5.Multiline = true;
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(175, 48);
+            this.textBox5.TabIndex = 28;
+            this.textBox5.Text = "Inserire solo Numeri interi altrimentiimenti non si potrà procedere";
+            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // FormAggiungiVino
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Desktop;
-            this.ClientSize = new System.Drawing.Size(1123, 211);
+            this.ClientSize = new System.Drawing.Size(1123, 228);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.Window;
@@ -244,6 +277,8 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Vino
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -259,8 +294,10 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Vino
         private System.Windows.Forms.Button ButtonAggiungi;
         private System.Windows.Forms.ComboBox comboBoxNome;
         private System.Windows.Forms.ComboBox comboBoxVigneto;
-        private System.Windows.Forms.ComboBox comboBoxBottiglie;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.ComboBox comboBoxTipologia;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.ComboBox comboBoxBottiglie;
+        private System.Windows.Forms.TextBox textBox5;
     }
 }

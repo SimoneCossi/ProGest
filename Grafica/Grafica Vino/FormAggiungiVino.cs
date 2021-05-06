@@ -72,11 +72,13 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Vino
         // evento che aggiunge un elemento al db e chiude il form corrente tornando a quello precedente
         private void ButtonAggiungi_Click(object sender, EventArgs e)
         {
+            int NrBottiglie;
             // if che fa in modo che il pulsante non faccia nulla finchè l'utente non avrà inserito tutti i dati
             if( this.comboBoxNome.Text      != "" && 
                 this.comboBoxTipologia.Text != "" &&
                 this.comboBoxVigneto.Text   != "" &&
-                this.comboBoxBottiglie.Text != "" )
+                this.comboBoxBottiglie.Text != "" &&
+                int.TryParse(this.comboBoxBottiglie.Text, out NrBottiglie))
             {
                 // creazione di un oggetto di tipo vino e deefinizione di tutti i suoi attributi in modo da passare alla
                 // query solo un oggetto e non tante stringhe che dovranno pure essere in ordine corretto
@@ -85,7 +87,7 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Vino
                 vino.SetAnno(decimal.ToInt16(this.numericUpDown1.Value));
                 vino.SetTipologia(this.comboBoxTipologia.Text);
                 vino.SetVigneto(this.comboBoxVigneto.Text);
-                vino.SetNrbottiglie(int.Parse(this.comboBoxBottiglie.Text));
+                vino.SetNrbottiglie(NrBottiglie);
 
                 DbVino v = new DbVino();
                 v.AddItem(vino);

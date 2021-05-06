@@ -98,6 +98,12 @@
     <Compile Include="Grafica\Grafica Marmellata\FormMarmellata.Designer.cs">
       <DependentUpon>FormMarmellata.cs</DependentUpon>
     </Compile>
+    <Compile Include="Grafica\Grafica Marmellata\FormModificaMarmellata.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grafica\Grafica Marmellata\FormModificaMarmellata.Designer.cs">
+      <DependentUpon>FormModificaMarmellata.cs</DependentUpon>
+    </Compile>
     <Compile Include="Grafica\Grafica Vigneto\FormAggiungiVigneto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -147,6 +153,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Grafica\Grafica Marmellata\FormMarmellata.resx">
       <DependentUpon>FormMarmellata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grafica\Grafica Marmellata\FormModificaMarmellata.resx">
+      <DependentUpon>FormModificaMarmellata.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Grafica\Grafica Vigneto\FormAggiungiVigneto.resx">
       <DependentUpon>FormAggiungiVigneto.cs</DependentUpon>

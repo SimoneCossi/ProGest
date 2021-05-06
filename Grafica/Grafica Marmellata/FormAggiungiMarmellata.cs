@@ -61,19 +61,22 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Marmellata
         // evento che aggiunge un elemento al db e chiude il form corrente tornando a quello precedente
         private void ButtonAggiungi_Click(object sender, EventArgs e)
         {
+            int DimensioneBarattolo;
+            int NrBarattoli;
             // if che fa in modo che il pulsante non faccia nulla finchè l'utente non avrà inserito tutti i dati
-            if (this.comboBoxFrutto.Text != "" &&
-                this.comboBoxDimensioni.Text != "" &&
-                this.comboBoxNrBarattoli.Text != "")
+            if (this.comboBoxFrutto.Text        != "" &&
+                this.comboBoxDimensioni.Text    != "" &&
+                this.comboBoxNrBarattoli.Text   != "" &&
+                int.TryParse(this.comboBoxDimensioni.Text, out DimensioneBarattolo) &&
+                int.TryParse(this.comboBoxNrBarattoli.Text, out NrBarattoli))
             {
                 // creazione di un oggetto di tipo vino e deefinizione di tutti i suoi attributi in modo da passare alla
                 // query solo un oggetto e non tante stringhe che dovranno pure essere in ordine corretto
                 Marmellata marmellata = new Marmellata();
                 marmellata.SetFrutto(this.comboBoxFrutto.Text);
                 marmellata.SetAnno(decimal.ToInt16(this.numericUpDown1.Value));
-                marmellata.SetDimensioniBarattolo(int.Parse(this.comboBoxDimensioni.Text));
-                marmellata.SetNrBarattoli(int.Parse(this.comboBoxNrBarattoli.Text));
-
+                marmellata.SetDimensioniBarattolo(DimensioneBarattolo);
+                marmellata.SetNrBarattoli(NrBarattoli);
                 DbMarmellata m = new DbMarmellata();
                 m.AddItem(marmellata);
 
