@@ -72,12 +72,6 @@ namespace Progetto_Esame_PMO.Grafica
         }// end button aggiungi click
 
 
-        private void FormVino_Load(object sender, EventArgs e)
-        {
-
-        }
-
-
         // evento che apre un form dove poter modificare l'elemento selezionato
         private void listViewDettagli_DoubleClick(object sender, EventArgs e)
         {

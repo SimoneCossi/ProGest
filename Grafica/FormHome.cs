@@ -38,17 +38,20 @@ namespace Progetto_Esame_PMO
             {
                 VisualizzaTabella.Items.Add(righe[i]);
             }
-            
 
-
-        }
+        }// end form
 
         // evento del button apri
         private void ButtonApri_Click(object sender, EventArgs e)
         {
-            // leggo cosa è stato selezionato allìnterno del 'tableLayoutPanelProdotti'
+
+            // leggo cosa è stato selezionato all'interno del 'tableLayoutPanelProdotti'
             switch (VisualizzaTabella.SelectedItem.ToString())
             {
+                // caso in cui non venga scelto nulla non succede nulla
+                case "":
+                    break;
+
                 // caso in cui viene scelto di visualizzare i vini
                 case "vini":
                     // apertura del form dove vengono visualizzati i dati nella tabella vini del db
@@ -56,13 +59,16 @@ namespace Progetto_Esame_PMO
                     this.Hide();
                     v.Show();
                     break;
-
+                
+                // caso in cui viene scelto di visualizzare vigneti
                 case "vigneti":
                     // apertura del form dove vengono visualizzati i dati della tabella vigneti del db
                     FormVigneto w = new FormVigneto(this);
                     this.Hide();
                     w.Show();
                     break;
+
+                // caso in cui viene scelto di visualizzare marmellate
                 case "marmellate":
                     // apertura del form dove vengono visualizzati i dati della tabella marmellate del db
                     FormMarmellata m = new FormMarmellata(this);

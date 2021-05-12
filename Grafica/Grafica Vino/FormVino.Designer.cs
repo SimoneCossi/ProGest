@@ -133,7 +133,6 @@ namespace Progetto_Esame_PMO.Grafica
             this.Name = "FormVino";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ProGest - Vino";
-            this.Load += new System.EventHandler(this.FormVino_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
