@@ -33,9 +33,9 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Marmellata
 
             textBox2.Text = m.SelectElement(id, "anno");
 
-            textBox3.Text = m.SelectElement(id, "dimensione");
+            textBox4.Text = m.SelectElement(id, "dimensione");
 
-            textBox4.Text = m.SelectElement(id, "nrbarattoli");
+            textBox7.Text = m.SelectElement(id, "nrbarattoli");
 
         }// end form
 

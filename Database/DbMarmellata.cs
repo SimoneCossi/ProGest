@@ -7,100 +7,62 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Progetto_Esame_PMO.Database;
 
 namespace Progetto_Esame_PMO.Database
 {
     // classe in cui vengono definiti i vari metodi dell'interfaccia 'IDb' personalizzandoli per la tabella 'mamrellate' del database
     class DbMarmellata : IDb
     {
+        // inizializzazione dell'istanza in modo da non doverla richiamare in ogni funzione
+        IQuery q = IQuery.Instance();
+
         // definizione del metodo che permette di aggiungere un elemento alla tabella 'vini' del database
         public void AddItem(object ob)
         {
             Marmellata m = (Marmellata)ob;
-            // recupero il percorso (path) del database
-            string dbpath = Path.GetFullPath("DB_ProGest.db");
-            using (SqliteConnection db =
-                new SqliteConnection($"Filename={dbpath}"))
-            {
-                // apro il database
-                db.Open();
 
-                SqliteCommand insertCommand = new SqliteCommand();
-                insertCommand.Connection = db;
-                // query per inserire i dati
-                insertCommand.CommandText = "INSERT INTO marmellate VALUES (NULL,'" + m.GetFrutto() + "'," + m.GetAnno() + "," + m.GetDimensioneBarattolo() + "," + m.GetNrBarattoli() + ");";
-                insertCommand.ExecuteReader();
+            // query per inserire i dati
+            string str = "INSERT INTO marmellate VALUES (NULL,'" + m.GetFrutto() + "'," + m.GetAnno() + "," + m.GetDimensioneBarattolo() + "," + m.GetNrBarattoli() + ");";
+            // passo la stringa al metodo che mi effettuerà la query al db
+            q.Query(str);
 
-                // chiudo il database
-                db.Close();
-            }
         }// end metodo AddItem
+
 
         // definizione del metodo che permette di eliminare un elemento dalla tabella
         public void DeleteItem(ListViewItem.ListViewSubItem id)
         {
-            // recupero il percorso (path) del database
-            string dbpath = Path.GetFullPath("DB_ProGest.db");
-            using (SqliteConnection db =
-                new SqliteConnection($"Filename={dbpath}"))
-            {
-                // apro il database
-                db.Open();
 
-                SqliteCommand insertCommand = new SqliteCommand();
-                insertCommand.Connection = db;
-                // query per eliminare un elemento 
-                insertCommand.CommandText = "DELETE FROM marmellate WHERE id = " + id.Text;
-                insertCommand.ExecuteReader();
+            // query per eliminare un elemento
+            string str= "DELETE FROM marmellate WHERE id = " + id.Text;
+            // passo la stringa al metodo che mi effettuerà la query al db
+            q.Query(str);
 
-                // chiudo il database
-                db.Close();
-            }
         }// end metodo DeleteItem
 
 
         // definizione del metodo che permette di ripulire l'intera tabella 
         public void DeleteTable()
         {
-            // recupero il percorso (path) del database
-            string dbpath = Path.GetFullPath("DB_ProGest.db");
-            using (SqliteConnection db =
-                new SqliteConnection($"Filename={dbpath}"))
-            {
-                // apro il database
-                db.Open();
 
-                SqliteCommand insertCommand = new SqliteCommand();
-                insertCommand.Connection = db;
-                // query per ripulire completamente una tabella vini e la tabella utilizzata per gli id delle altre tabelle
-                insertCommand.CommandText = "DELETE FROM mamrellate; DELETE FROM sqlite_sequence WHERE name = 'marmellate'";
-                insertCommand.ExecuteReader();
+            // query per ripulire completamente la tabella marmellate e la tabella id che tiene il conto degli id di tutte le tabelle (togliendo solo gli id riferiti alla tabella marmellate)
+            string str = "DELETE FROM mamrellate; DELETE FROM sqlite_sequence WHERE name = 'marmellate'";
+            // passo la stringa al metodo che mi effettuerà la query al db
+            q.Query(str);
 
-                // chiudo il database
-                db.Close();
-            }
         }// end metodo DeleteTable
+
 
         // definizione del metodo che permette di modificare un elemento 
         public void ModifyItem(object ob, string nomeColonna, ListViewItem.ListViewSubItem id)
         {
-            // recupero il percorso (path) del database
-            string dbpath = Path.GetFullPath("DB_ProGest.db");
-            using (SqliteConnection db =
-                new SqliteConnection($"Filename={dbpath}"))
-            {
-                // apro il database
-                db.Open();
 
-                SqliteCommand insertCommand = new SqliteCommand();
-                insertCommand.Connection = db;
-                // query per modificare i dati
-                insertCommand.CommandText = "UPDATE marmellate SET " + nomeColonna + " = '" + ob + "' WHERE id = " + id.Text;
-                insertCommand.ExecuteReader();
+            // query per modificare i dati
+            string str = "UPDATE marmellate SET " + nomeColonna + " = '" + ob + "' WHERE id = " + id.Text;
+            // passo la stringa al metodo che mi effettuerà la query al db
+            q.Query(str);
 
-                // chiudo il database
-                db.Close();
-            }
         }// end metodo ModifyItem
 
 
@@ -110,38 +72,19 @@ namespace Progetto_Esame_PMO.Database
             return "marmellate";
         }// end metodo NameTable
 
+
         // definizione del metodo per ottenere una lista di tutti gli elementi del db
         public List<string> Select(string nomeColonna)
         {
-            List<string> m = new List<string>();
-            // recupero il percorso (path) del database
-            string dbpath = Path.GetFullPath("DB_ProGest.db");
-            using (SqliteConnection db =
-                new SqliteConnection($"Filename={dbpath}"))
-            {
-                // apro il database
-                db.Open();
-                SqliteCommand insertCommand = new SqliteCommand();
-                insertCommand.Connection = db;
 
-                // query per cercare gli elementi
-                insertCommand.CommandText = "SELECT " + nomeColonna + " FROM marmellate ORDER BY id";
-                SqliteDataReader reader = insertCommand.ExecuteReader();
-                if (reader.HasRows)
-                {
-                    while (reader.Read())
-                    {
-                        if (!reader.IsDBNull(0))
-                        {
-                            m.Add(reader.GetString(0));
-                        }
-                    }
-                }
-                reader.Close();
-                // chiudo il database
-                db.Close();
-            }
+            List<string> m = new List<string>();
+
+            // query per ottenere una lista di tutti gli elementi del db
+            string str = "SELECT " + nomeColonna + " FROM marmellate ORDER BY id";
+            // passo la stringa al metodo che mi effettuerà la query al db
+            q.Query(ref m, str);
             return m;
+
         }// end metodo Select
 
 
@@ -149,61 +92,30 @@ namespace Progetto_Esame_PMO.Database
         public List<string> SelectDistinct(string nomeColonna)
         {
             List<string> m = new List<string>();
-            // recupero il percorso (path) del database
-            string dbpath = Path.GetFullPath("DB_ProGest.db");
-            using (SqliteConnection db =
-                new SqliteConnection($"Filename={dbpath}"))
-            {
-                // apro il database
-                db.Open();
-                SqliteCommand insertCommand = new SqliteCommand();
-                insertCommand.Connection = db;
-
-                // query per cercare gli elementi
-                insertCommand.CommandText = "SELECT DISTINCT " + nomeColonna + " FROM marmellate ORDER BY id";
-                SqliteDataReader reader = insertCommand.ExecuteReader();
-                if (reader.HasRows)
-                {
-                    while (reader.Read())
-                    {
-                        if (!reader.IsDBNull(0))
-                        {
-                            m.Add(reader.GetString(0));
-                        }
-                    }
-                }
-                reader.Close();
-                // chiudo il database
-                db.Close();
-            }
+            
+            // query per cercare gli elementi
+            string str = "SELECT DISTINCT " + nomeColonna + " FROM marmellate ORDER BY id";
+            // passo la stringa al metodo che mi effettuerà la query al db
+            q.Query(ref m, str);
             return m;
+
         }// end metodo SelectDistinct
+
 
         // definizione del metodo che restituisce un attributo scelto dalla tabella
         public string SelectElement(ListViewItem.ListViewSubItem id, string nomecolonna)
         {
+
             string m = null;
 
-            // recupero il percorso (path) del database
-            string dbpath = Path.GetFullPath("DB_ProGest.db");
-            using (SqliteConnection db =
-                new SqliteConnection($"Filename={dbpath}"))
-            {
-                // apro il database
-                db.Open();
-                SqliteCommand insertCommand = new SqliteCommand();
-                insertCommand.Connection = db;
-
-                // query per cercare gli elementi
-                insertCommand.CommandText = "SELECT " + nomecolonna + " FROM marmellate WHERE id = " + id.Text;
-                SqliteDataReader reader = insertCommand.ExecuteReader();
-                reader.Read();
-                m = reader.GetString(0);
-                reader.Close();
-                // chiudo il database
-                db.Close();
-            }
+            // query per cercare gli elementi
+            string str = "SELECT " + nomecolonna + " FROM marmellate WHERE id = " + id.Text;
+            // passo la stringa al metodo che mi effettuerà la query al db
+            q.Query(ref m, str);
             return m;
+
         }// end metodo SelectElement
+
+
     }// end DbMarmellata
 }
