@@ -146,6 +146,8 @@
     <Compile Include="Prodotti\Vino.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Visitor Pattern\Node.cs" />
+    <Compile Include="Visitor Pattern\Visitor.cs" />
     <EmbeddedResource Include="Grafica\FormHome.resx">
       <DependentUpon>FormHome.cs</DependentUpon>
     </EmbeddedResource>

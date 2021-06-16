@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Progetto_Esame_PMO.Visitor_Pattern;
 
 namespace Progetto_Esame_PMO.Prodotti
 {
     // classe dove viene definito l'oggetto 'vino' con vari attributi da poter passare alle query del database
-    class Vino
+    class Vino : Node
     {
         // dichiarazione dell'attributo 'nome'
         private string nome;
@@ -69,5 +70,10 @@ namespace Progetto_Esame_PMO.Prodotti
             nrbottiglie = value;
         }
 
+        // definizione Accept
+        public void Accept(Visitor v)
+        {
+            v.VisitVini(this);
+        }
     }
 }

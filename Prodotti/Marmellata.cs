@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Progetto_Esame_PMO.Visitor_Pattern;
 
 namespace Progetto_Esame_PMO.Prodotti
 {
     // classe dove viene definito l'oggetto marmellata con i vari attributi da poter passare alla query del db
-    class Marmellata
+    class Marmellata : Node
     {
         // dichiarazione dell'atttributo 'nome'
         private string frutto;
@@ -56,6 +57,12 @@ namespace Progetto_Esame_PMO.Prodotti
         public void SetNrBarattoli(int value)
         {
             nrBarattoli = value;
+        }
+
+        // definizione Accept
+        public void Accept(Visitor v)
+        {
+            v.VisitMarmellate(this);
         }
     }
 }

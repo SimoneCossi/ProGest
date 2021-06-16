@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Progetto_Esame_PMO.Visitor_Pattern;
 
 namespace Progetto_Esame_PMO.Prodotti
 {
     // classe dove viene definito l'oggetto vigneto
-    class Vigneto
+    class Vigneto : Node
     {
         //dicharazione dell'attributo nome
         private string nome;
@@ -31,6 +32,12 @@ namespace Progetto_Esame_PMO.Prodotti
         public void SetNrVitiMorte(int value)
         {
             NrVitiMorte = value;
+        }
+
+        // definizione Accept
+        public void Accept(Visitor v)
+        {
+            v.VisitVigneti(this);
         }
     }
 }
