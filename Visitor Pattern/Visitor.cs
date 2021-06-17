@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Progetto_Esame_PMO.Prodotti;
+using System.Windows.Forms;
+using Progetto_Esame_PMO.Database;
 
 namespace Progetto_Esame_PMO.Visitor_Pattern
 {
@@ -11,7 +13,7 @@ namespace Progetto_Esame_PMO.Visitor_Pattern
     interface Visitor
     {
         // dichiarazione dei vari metodi
-        void VisitVini(Vino v);
+        List<string> VisitVini(DbVino v);
         void VisitMarmellate(Marmellata v);     // DA RICONTROLLARE ASSOLUTAMENTE
         void VisitVigneti(Vigneto v);
     }

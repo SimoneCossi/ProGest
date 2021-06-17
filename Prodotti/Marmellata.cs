@@ -8,7 +8,7 @@ using Progetto_Esame_PMO.Visitor_Pattern;
 namespace Progetto_Esame_PMO.Prodotti
 {
     // classe dove viene definito l'oggetto marmellata con i vari attributi da poter passare alla query del db
-    class Marmellata : Node
+    class Marmellata
     {
         // dichiarazione dell'atttributo 'nome'
         private string frutto;
@@ -59,10 +59,5 @@ namespace Progetto_Esame_PMO.Prodotti
             nrBarattoli = value;
         }
 
-        // definizione Accept
-        public void Accept(Visitor v)
-        {
-            v.VisitMarmellate(this);
-        }
     }
 }

@@ -7,11 +7,13 @@ using Progetto_Esame_PMO.Prodotti;
 using Microsoft.Data.Sqlite;
 using System.IO;
 using System.Windows.Forms;
+using Progetto_Esame_PMO.Visitor_Pattern;
+
 
 namespace Progetto_Esame_PMO.Database
 {
     // classe in cui vengono definiti i vari metodi dell`interfacciadatabase 'IDb' personalizzandoli per la tabella 'vini' del 
-    class DbVino : IDb
+    class DbVino : IDb, Node
     {
         // inizializzazione dell'istanza in modo da non doverla richiamare in ogni funzione
         IQuery q = IQuery.Instance();
@@ -116,5 +118,10 @@ namespace Progetto_Esame_PMO.Database
         }// end metodo SelectElement
 
 
+        // definizione Accept
+        public void Accept(Visitor v)
+        {
+            v.VisitVini(this);
+        }
     }// end DbVino
 }

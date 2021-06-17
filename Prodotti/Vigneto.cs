@@ -8,7 +8,7 @@ using Progetto_Esame_PMO.Visitor_Pattern;
 namespace Progetto_Esame_PMO.Prodotti
 {
     // classe dove viene definito l'oggetto vigneto
-    class Vigneto : Node
+    class Vigneto
     {
         //dicharazione dell'attributo nome
         private string nome;
@@ -34,10 +34,5 @@ namespace Progetto_Esame_PMO.Prodotti
             NrVitiMorte = value;
         }
 
-        // definizione Accept
-        public void Accept(Visitor v)
-        {
-            v.VisitVigneti(this);
-        }
     }
 }

@@ -4,9 +4,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 // per test
 using Progetto_Esame_PMO.Database;
 using Progetto_Esame_PMO.Prodotti;
+using Progetto_Esame_PMO.Visitor_Pattern;
 
 namespace Progetto_Esame_PMO
 {
@@ -25,7 +27,16 @@ namespace Progetto_Esame_PMO
             ////////////////////////////////////////////////////////////
             ////////////AREA DI TEST///////////////////////////////////
             ////////////////////////////////////////////////////////// 
-            
+            DbVino v = new DbVino();
+            List<string> i = new List<string>();
+            i = v.Select("id");
+            for (int n = 0; n < i.Count; n++)
+                Console.WriteLine(i[n]);
+
+            PrinterVisitor c = new PrinterVisitor();
+            i = c.VisitVini(v);
+            for (int n = 0; n < i.Count; n++)
+                Console.WriteLine(i[n]);
         }
     }
 }
