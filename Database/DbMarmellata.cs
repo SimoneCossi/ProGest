@@ -8,12 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Progetto_Esame_PMO.Database;
+using Progetto_Esame_PMO.Visitor_Pattern;
 
 
 namespace Progetto_Esame_PMO.Database
 {
     // classe in cui vengono definiti i vari metodi dell'interfaccia 'IDb' personalizzandoli per la tabella 'mamrellate' del database
-    class DbMarmellata : IDb
+    class DbMarmellata : IDb, Node
     {
         // inizializzazione dell'istanza in modo da non doverla richiamare in ogni funzione
         IQuery q = IQuery.Instance();
@@ -117,6 +118,27 @@ namespace Progetto_Esame_PMO.Database
 
         }// end metodo SelectElement
 
+
+        // definizione del metodo che restituisce un attributo scelto dalla tabella
+        public string SelectElement(string id, string nomecolonna)
+        {
+
+            string m = null;
+
+            // query per cercare gli elementi
+            string str = "SELECT " + nomecolonna + " FROM marmellate WHERE id = " + id;
+            // passo la stringa al metodo che mi effettuerà la query al db
+            q.Query(ref m, str);
+            return m;
+
+        }// end metodo SelectElement
+
+
+        // definizione Accept
+        public void Accept(Visitor v)
+        {
+            v.VisitMarmellate(this);
+        }
 
     }// end DbMarmellata
 }

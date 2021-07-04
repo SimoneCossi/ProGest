@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Progetto_Esame_PMO.Database.DbMarmellata" BaseTypeListCollapsed="true">
+    <Position X="14.75" Y="11.75" Width="2.5" />
+    <InheritanceLine Type="System.Object" ManuallyRouted="true">
+      <Path>
+        <Point X="11" Y="10.812" />
+        <Point X="11" Y="11.125" />
+        <Point X="16" Y="11.125" />
+        <Point X="16" Y="11.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AIAAAAAACAAAAAAAAwAAAAgBgAAAEAAAACAAQAAAAAA=</HashCode>
+      <FileName>Database\DbMarmellata.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Bottom" Position="1.152" />
+  </Class>
+  <Class Name="Progetto_Esame_PMO.Database.DbVigneto" BaseTypeListCollapsed="true">
+    <Position X="17.5" Y="11.75" Width="2.5" />
+    <InheritanceLine Type="System.Object" ManuallyRouted="true">
+      <Path>
+        <Point X="11" Y="10.812" />
+        <Point X="11" Y="11.132" />
+        <Point X="18.75" Y="11.132" />
+        <Point X="18.75" Y="11.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AIAAAAAACAAAAAAAAwAAAAgBgAAAEAAAACAAQAAAAAA=</HashCode>
+      <FileName>Database\DbVigneto.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Bottom" Position="1.264" />
+  </Class>
+  <Class Name="Progetto_Esame_PMO.Database.DbVino" BaseTypeListCollapsed="true">
+    <Position X="12" Y="11.75" Width="2.5" />
+    <InheritanceLine Type="System.Object" ManuallyRouted="true">
+      <Path>
+        <Point X="11" Y="10.812" />
+        <Point X="11" Y="11.133" />
+        <Point X="13.25" Y="11.133" />
+        <Point X="13.25" Y="11.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AIAAAAAACAAAAAAAAwAAAAgBgAAAEAAAACAAQAAAAAA=</HashCode>
+      <FileName>Database\DbVino.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Bottom" Position="1.095" />
+  </Class>
+  <Class Name="Progetto_Esame_PMO.Database.IQuery">
+    <Position X="9.75" Y="11.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABAAAiAQAAAAAAAAAA=</HashCode>
+      <FileName>Database\IQuery.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Progetto_Esame_PMO.FormHome">
+    <Position X="23.75" Y="8.25" Width="1.75" />
+    <InheritanceLine Type="System.Windows.Forms.Form" FixedFromPoint="true">
+      <Path>
+        <Point X="25.688" Y="6.941" />
+        <Point X="25.688" Y="7.875" />
+        <Point X="24.625" Y="7.875" />
+        <Point X="24.625" Y="8.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>ACAAIAAQACBAAAAAAACAAIBCAAIAAAACEAAABAAAASA=</HashCode>
+      <FileName>Grafica\FormHome.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Progetto_Esame_PMO.Grafica.Grafica_Marmellata.FormAggiungiMarmellata">
+    <Position X="35.75" Y="8.25" Width="2" />
+    <InheritanceLine Type="System.Windows.Forms.Form" FixedFromPoint="true">
+      <Path>
+        <Point X="25.688" Y="6.941" />
+        <Point X="25.688" Y="7.875" />
+        <Point X="36.75" Y="7.875" />
+        <Point X="36.75" Y="8.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>ACABAAAQASIAABCAAACAAABCIAAACAAEkAAAABAAASA=</HashCode>
+      <FileName>Grafica\Grafica Marmellata\FormAggiungiMarmellata.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Progetto_Esame_PMO.Grafica.Grafica_Marmellata.FormMarmellata">
+    <Position X="33.25" Y="8.25" Width="2.25" />
+    <InheritanceLine Type="System.Windows.Forms.Form" FixedFromPoint="true">
+      <Path>
+        <Point X="25.688" Y="6.941" />
+        <Point X="25.688" Y="7.875" />
+        <Point X="34.375" Y="7.875" />
+        <Point X="34.375" Y="8.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAABAAACACAAAAQAAACAIAgCAAAACCAEAABAAAQAACA=</HashCode>
+      <FileName>Grafica\Grafica Marmellata\FormMarmellata.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Progetto_Esame_PMO.Grafica.Grafica_Marmellata.FormModificaMarmellata">
+    <Position X="38" Y="8.25" Width="2.25" />
+    <InheritanceLine Type="System.Windows.Forms.Form" FixedFromPoint="true">
+      <Path>
+        <Point X="25.688" Y="6.941" />
+        <Point X="25.688" Y="7.875" />
+        <Point X="39.125" Y="7.875" />
+        <Point X="39.125" Y="8.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>QCAAAAAQASIAAACAEACAAABCoAAIAAAF0EAAAIAAAqA=</HashCode>
+      <FileName>Grafica\Grafica Marmellata\FormModificaMarmellata.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Progetto_Esame_PMO.Grafica.Grafica_Vigneto.FormAggiungiVigneto">
+    <Position X="43.25" Y="8.25" Width="2.25" />
+    <InheritanceLine Type="System.Windows.Forms.Form" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="25.688" Y="6.941" />
+        <Point X="25.688" Y="7.875" />
+        <Point X="44.375" Y="7.875" />
+        <Point X="44.375" Y="8.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAABBAAAACAAAACAAACEAAACAAAACQAAEBAAAAAAACA=</HashCode>
+      <FileName>Grafica\Grafica Vigneto\FormAggiungiVigneto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Progetto_Esame_PMO.Grafica.Grafica_Vigneto.FormModificaVigneto">
+    <Position X="45.75" Y="8.25" Width="2" />
+    <InheritanceLine Type="System.Windows.Forms.Form" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="25.688" Y="6.941" />
+        <Point X="25.688" Y="7.87" />
+        <Point X="46.75" Y="7.87" />
+        <Point X="46.75" Y="8.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>QCAAAAIQACAAAACAEACEAABCgAAIAAAFkEAAAIAACiA=</HashCode>
+      <FileName>Grafica\Grafica Vigneto\FormModificaVigneto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Progetto_Esame_PMO.Grafica.Grafica_Vigneto.FormVigneto">
+    <Position X="40.75" Y="8.25" Width="2.25" />
+    <InheritanceLine Type="System.Windows.Forms.Form" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="25.688" Y="6.941" />
+        <Point X="25.688" Y="7.87" />
+        <Point X="41.875" Y="7.87" />
+        <Point X="41.875" Y="8.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAgAAAACASAAAAABAACAAAgCAAAQACAEAAAAAAAAACA=</HashCode>
+      <FileName>Grafica\Grafica Vigneto\FormVigneto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Progetto_Esame_PMO.Grafica.Grafica_Vino.FormAggiungiVino">
+    <Position X="28.25" Y="8.25" Width="2" />
+    <InheritanceLine Type="System.Windows.Forms.Form" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="25.688" Y="6.941" />
+        <Point X="25.688" Y="7.875" />
+        <Point X="29.25" Y="7.875" />
+        <Point X="29.25" Y="8.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>ICABAAAQASAAABCAAACAAABGKAAACAAEEBAAAAAAACA=</HashCode>
+      <FileName>Grafica\Grafica Vino\FormAggiungiVino.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Progetto_Esame_PMO.Grafica.FormModificaVino">
+    <Position X="26" Y="8.25" Width="2" />
+    <InheritanceLine Type="System.Windows.Forms.Form" FixedFromPoint="true">
+      <Path>
+        <Point X="25.688" Y="6.941" />
+        <Point X="25.688" Y="7.875" />
+        <Point X="27" Y="7.875" />
+        <Point X="27" Y="8.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>QCAAAAAQASAAAACAEAGAAABCoABIAAAF0GAAAIAAAqA=</HashCode>
+      <FileName>Grafica\Grafica Vino\FormModificaVino.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Progetto_Esame_PMO.Grafica.FormVino">
+    <Position X="30.5" Y="8.25" Width="2.25" />
+    <InheritanceLine Type="System.Windows.Forms.Form" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="25.688" Y="6.941" />
+        <Point X="25.688" Y="7.875" />
+        <Point X="31.625" Y="7.875" />
+        <Point X="31.625" Y="8.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAJAAACACAAAAAAAACAAAgCAAAQCCAEAAAAhAQAACA=</HashCode>
+      <FileName>Grafica\Grafica Vino\FormVino.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Progetto_Esame_PMO.Prodotti.Marmellata">
+    <Position X="3.5" Y="11.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAABEAEAABEAEQABEAAAEAEAAAAA=</HashCode>
+      <FileName>Prodotti\Marmellata.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Progetto_Esame_PMO.Prodotti.Vigneto">
+    <Position X="5.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAEAAAAQAAEAAAAQAAAAAAAQAAAAA=</HashCode>
+      <FileName>Prodotti\Vigneto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Progetto_Esame_PMO.Prodotti.Vino">
+    <Position X="1.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>SQAgBAACAAACAIAAAIAAAEAAEAAEQQBAAAAAAAAAAAA=</HashCode>
+      <FileName>Prodotti\Vino.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Progetto_Esame_PMO.Visitor_Pattern.PrinterVisitor" BaseTypeListCollapsed="true">
+    <Position X="7.75" Y="12" Width="1.5" />
+    <InheritanceLine Type="System.Object" FixedToPoint="true">
+      <Path>
+        <Point X="11" Y="10.812" />
+        <Point X="11" Y="11.133" />
+        <Point X="8.5" Y="11.133" />
+        <Point X="8.5" Y="12" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAAAAAAAAIAAAAAAAABAAAAAIA=</HashCode>
+      <FileName>Visitor Pattern\PrinterVisitor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Bottom" Position="0.651" />
+  </Class>
+  <Class Name="System.Windows.Forms.Form" Collapsed="true">
+    <Position X="25.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Object" Collapsed="true">
+    <Position X="10.25" Y="10.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Interface Name="Progetto_Esame_PMO.Database.IDb">
+    <Position X="14" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAwAAAAgBgAAAEAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Database\IDb.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Progetto_Esame_PMO.Visitor_Pattern.Node">
+    <Position X="16.75" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Visitor Pattern\Node.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Progetto_Esame_PMO.Visitor_Pattern.Visitor">
+    <Position X="7.75" Y="14.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAAAAAAAAIAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>Visitor Pattern\Visitor.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

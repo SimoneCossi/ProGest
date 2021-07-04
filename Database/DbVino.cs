@@ -118,6 +118,20 @@ namespace Progetto_Esame_PMO.Database
         }// end metodo SelectElement
 
 
+        // definizione del metodo che restituisce un attributo scelto dalla tabella
+        public string SelectElement(string id, string nomecolonna)
+        {
+
+            string m = null;
+
+            // query per cercare gli elementi
+            string str = "SELECT " + nomecolonna + " FROM vini WHERE id = " + id;
+            // passo la stringa al metodo che mi effettuerà la query al db
+            q.Query(ref m, str);
+            return m;
+        }// end metodo SelectElement
+
+
         // definizione Accept
         public void Accept(Visitor v)
         {

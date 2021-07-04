@@ -7,11 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Progetto_Esame_PMO.Visitor_Pattern;
 
 namespace Progetto_Esame_PMO.Database
 {
     // classe in cui vengono definiti tutti i vari metodi dell'interfaccia IDb per la tabella 'vigneti' del db
-    class DbVigneto : IDb
+    class DbVigneto : IDb, Node
     {
         // inizializzazione dell'istanza in modo da non doverla richiamare in ogni funzione
         IQuery q = IQuery.Instance();
@@ -117,6 +118,26 @@ namespace Progetto_Esame_PMO.Database
 
         }// end metodo SelectElement
 
+
+        // definizione del metodo che restituisce un attributo scelto dalla tabella
+        public string SelectElement(string id, string nomecolonna)
+        {
+
+            string m = null;
+
+            // query per cercare gli elementi
+            string str = "SELECT " + nomecolonna + " FROM vigneti WHERE id = " + id;
+            // passo la stringa al metodo che mi effettuerà la query al db
+            q.Query(ref m, str);
+            return m;
+
+        }// end metodo SelectElement
+
+        // definizione Accept
+        public void Accept(Visitor v)
+        {
+            v.VisitVigneti(this);
+        }
 
     }// end DbVigneto
 }

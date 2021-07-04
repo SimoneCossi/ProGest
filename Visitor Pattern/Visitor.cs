@@ -14,7 +14,7 @@ namespace Progetto_Esame_PMO.Visitor_Pattern
     {
         // dichiarazione dei vari metodi
         List<string> VisitVini(DbVino v);
-        void VisitMarmellate(Marmellata v);     // DA RICONTROLLARE ASSOLUTAMENTE
-        void VisitVigneti(Vigneto v);
+        List<string> VisitMarmellate(DbMarmellata v);     // DA RICONTROLLARE ASSOLUTAMENTE
+        List<string> VisitVigneti(DbVigneto v);
     }
 }
