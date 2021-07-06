@@ -50,23 +50,24 @@ namespace Progetto_Esame_PMO
             List<string> vini_p         = p.VisitVini(v);
             List<string> marmellate_p   = p.VisitMarmellate(m);
             List<string> vigneti_p      = p.VisitVigneti(w);
-            
+
+            Console.WriteLine(vini_p.Count);
             // ciclo che aggiunge i 5 vini con maggiore priorità di vendita alla listview
-            for(int i = 0; i < 5; i++)
+            for (int i = 0; (i < 5) & (i < vini_p.Count); i++)
             {
                 ListViewItem entryListItem = listViewPriorita.Items.Add(v.SelectElement(vini_p[i].ToString(), "nome"));
                 entryListItem.UseItemStyleForSubItems = true;
                 ListViewItem.ListViewSubItem quantita = entryListItem.SubItems.Add(v.SelectElement(vini_p[i].ToString(), "nrbottiglie"));
             }
             // ciclo che aggiunge i 3 vigneti con maggiore priorità di vendita alla listview
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; (i < 3) & (i < vigneti_p.Count); i++)
             {
-                ListViewItem entryListItem = listViewPriorita.Items.Add(w.SelectElement(marmellate_p[i].ToString(), "nome"));
+                ListViewItem entryListItem = listViewPriorita.Items.Add(w.SelectElement(vigneti_p[i].ToString(), "nome"));
                 entryListItem.UseItemStyleForSubItems = true;
                 ListViewItem.ListViewSubItem quantita = entryListItem.SubItems.Add(w.SelectElement(marmellate_p[i].ToString(), "nrvitimorte"));
             }
             // ciclo che aggiunge i 3 marmellate con maggiore priorità di vendita alla listview
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; (i < 3) & (i < marmellate_p.Count); i++)
             {
                 ListViewItem entryListItem = listViewPriorita.Items.Add(m.SelectElement(marmellate_p[i].ToString(), "frutto"));
                 entryListItem.UseItemStyleForSubItems = true;
