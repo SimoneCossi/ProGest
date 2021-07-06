@@ -144,7 +144,7 @@
     <Compile Include="Prodotti\Marmellata.cs" />
     <Compile Include="Prodotti\Vigneto.cs" />
     <Compile Include="Prodotti\Vino.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Programma\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Visitor Pattern\Node.cs" />
     <Compile Include="Visitor Pattern\PrinterVisitor.cs" />
@@ -188,7 +188,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="packages.config" />
+    <None Include="Programma\packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -201,7 +201,7 @@
     <None Include="UML.cd" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="Programma\App.config" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
