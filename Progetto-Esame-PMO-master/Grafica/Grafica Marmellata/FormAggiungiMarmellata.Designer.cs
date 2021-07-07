@@ -41,8 +41,8 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Marmellata
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.comboBoxNrBarattoli = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.comboBoxDimensioni = new System.Windows.Forms.ComboBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
+            this.comboBoxDimensioni = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
@@ -92,7 +92,7 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Marmellata
             0,
             0});
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 26);
+            this.numericUpDown1.Size = new System.Drawing.Size(120, 30);
             this.numericUpDown1.TabIndex = 21;
             this.numericUpDown1.Value = new decimal(new int[] {
             2015,
@@ -122,9 +122,10 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Marmellata
             this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox6.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox6.Location = new System.Drawing.Point(24, 49);
+            this.textBox6.Location = new System.Drawing.Point(24, 46);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(167, 23);
+            this.textBox6.ReadOnly = true;
+            this.textBox6.Size = new System.Drawing.Size(167, 29);
             this.textBox6.TabIndex = 11;
             this.textBox6.Text = "Frutto";
             this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -136,9 +137,10 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Marmellata
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox4.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox4.Location = new System.Drawing.Point(240, 49);
+            this.textBox4.Location = new System.Drawing.Point(240, 46);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(167, 23);
+            this.textBox4.ReadOnly = true;
+            this.textBox4.Size = new System.Drawing.Size(167, 29);
             this.textBox4.TabIndex = 15;
             this.textBox4.Text = "Anno";
             this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -153,6 +155,7 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Marmellata
             this.textBox1.Location = new System.Drawing.Point(456, 33);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(167, 56);
             this.textBox1.TabIndex = 12;
             this.textBox1.Text = "Dimensione Barattoli (g)";
@@ -165,9 +168,10 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Marmellata
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox3.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox3.Location = new System.Drawing.Point(672, 49);
+            this.textBox3.Location = new System.Drawing.Point(672, 46);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(168, 23);
+            this.textBox3.ReadOnly = true;
+            this.textBox3.Size = new System.Drawing.Size(168, 29);
             this.textBox3.TabIndex = 14;
             this.textBox3.Text = "Nr di Barattoli";
             this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -179,7 +183,7 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Marmellata
             this.comboBoxFrutto.FormattingEnabled = true;
             this.comboBoxFrutto.Location = new System.Drawing.Point(43, 125);
             this.comboBoxFrutto.Name = "comboBoxFrutto";
-            this.comboBoxFrutto.Size = new System.Drawing.Size(130, 28);
+            this.comboBoxFrutto.Size = new System.Drawing.Size(130, 33);
             this.comboBoxFrutto.TabIndex = 17;
             // 
             // tableLayoutPanel2
@@ -207,6 +211,7 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Marmellata
             this.textBox2.Location = new System.Drawing.Point(3, 61);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(204, 53);
             this.textBox2.TabIndex = 26;
             this.textBox2.Text = "Inserire solo Numeri interi altrimentiimenti non si potrà procedere";
@@ -219,7 +224,7 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Marmellata
             this.comboBoxNrBarattoli.FormattingEnabled = true;
             this.comboBoxNrBarattoli.Location = new System.Drawing.Point(40, 3);
             this.comboBoxNrBarattoli.Name = "comboBoxNrBarattoli";
-            this.comboBoxNrBarattoli.Size = new System.Drawing.Size(130, 28);
+            this.comboBoxNrBarattoli.Size = new System.Drawing.Size(130, 33);
             this.comboBoxNrBarattoli.TabIndex = 25;
             // 
             // tableLayoutPanel3
@@ -237,16 +242,6 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Marmellata
             this.tableLayoutPanel3.Size = new System.Drawing.Size(210, 117);
             this.tableLayoutPanel3.TabIndex = 24;
             // 
-            // comboBoxDimensioni
-            // 
-            this.comboBoxDimensioni.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.comboBoxDimensioni.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxDimensioni.FormattingEnabled = true;
-            this.comboBoxDimensioni.Location = new System.Drawing.Point(40, 3);
-            this.comboBoxDimensioni.Name = "comboBoxDimensioni";
-            this.comboBoxDimensioni.Size = new System.Drawing.Size(130, 28);
-            this.comboBoxDimensioni.TabIndex = 23;
-            // 
             // textBox5
             // 
             this.textBox5.BackColor = System.Drawing.SystemColors.Desktop;
@@ -257,10 +252,21 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Marmellata
             this.textBox5.Location = new System.Drawing.Point(3, 61);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
+            this.textBox5.ReadOnly = true;
             this.textBox5.Size = new System.Drawing.Size(204, 53);
             this.textBox5.TabIndex = 27;
             this.textBox5.Text = "Inserire solo Numeri interi altrimentiimenti non si potrà procedere";
             this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // comboBoxDimensioni
+            // 
+            this.comboBoxDimensioni.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.comboBoxDimensioni.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxDimensioni.FormattingEnabled = true;
+            this.comboBoxDimensioni.Location = new System.Drawing.Point(40, 3);
+            this.comboBoxDimensioni.Name = "comboBoxDimensioni";
+            this.comboBoxDimensioni.Size = new System.Drawing.Size(130, 33);
+            this.comboBoxDimensioni.TabIndex = 23;
             // 
             // FormAggiungiMarmellata
             // 

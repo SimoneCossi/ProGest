@@ -41,8 +41,8 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Vino
             this.comboBoxNome = new System.Windows.Forms.ComboBox();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.comboBoxBottiglie = new System.Windows.Forms.ComboBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
+            this.comboBoxBottiglie = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
@@ -85,7 +85,7 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Vino
             this.comboBoxTipologia.FormattingEnabled = true;
             this.comboBoxTipologia.Location = new System.Drawing.Point(402, 117);
             this.comboBoxTipologia.Name = "comboBoxTipologia";
-            this.comboBoxTipologia.Size = new System.Drawing.Size(130, 28);
+            this.comboBoxTipologia.Size = new System.Drawing.Size(130, 33);
             this.comboBoxTipologia.TabIndex = 21;
             // 
             // comboBoxVigneto
@@ -96,7 +96,7 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Vino
             this.comboBoxVigneto.FormattingEnabled = true;
             this.comboBoxVigneto.Location = new System.Drawing.Point(589, 117);
             this.comboBoxVigneto.Name = "comboBoxVigneto";
-            this.comboBoxVigneto.Size = new System.Drawing.Size(130, 28);
+            this.comboBoxVigneto.Size = new System.Drawing.Size(130, 33);
             this.comboBoxVigneto.TabIndex = 19;
             // 
             // textBox6
@@ -106,9 +106,10 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Vino
             this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox6.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox6.Location = new System.Drawing.Point(3, 45);
+            this.textBox6.Location = new System.Drawing.Point(3, 42);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(181, 23);
+            this.textBox6.ReadOnly = true;
+            this.textBox6.Size = new System.Drawing.Size(181, 29);
             this.textBox6.TabIndex = 10;
             this.textBox6.Text = "Nome del Vino";
             this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -120,9 +121,10 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Vino
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox1.Location = new System.Drawing.Point(190, 45);
+            this.textBox1.Location = new System.Drawing.Point(190, 42);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(181, 23);
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(181, 29);
             this.textBox1.TabIndex = 11;
             this.textBox1.Text = "Anno";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -137,6 +139,7 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Vino
             this.textBox3.Location = new System.Drawing.Point(377, 43);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
             this.textBox3.Size = new System.Drawing.Size(181, 28);
             this.textBox3.TabIndex = 13;
             this.textBox3.Text = "Tipologia";
@@ -152,6 +155,7 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Vino
             this.textBox2.Location = new System.Drawing.Point(564, 44);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(181, 26);
             this.textBox2.TabIndex = 12;
             this.textBox2.Text = "Vigneto";
@@ -167,6 +171,7 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Vino
             this.textBox4.Location = new System.Drawing.Point(751, 44);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
+            this.textBox4.ReadOnly = true;
             this.textBox4.Size = new System.Drawing.Size(181, 26);
             this.textBox4.TabIndex = 14;
             this.textBox4.Text = "Numero di bottiglie";
@@ -194,7 +199,7 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Vino
             this.comboBoxNome.FormattingEnabled = true;
             this.comboBoxNome.Location = new System.Drawing.Point(28, 117);
             this.comboBoxNome.Name = "comboBoxNome";
-            this.comboBoxNome.Size = new System.Drawing.Size(130, 28);
+            this.comboBoxNome.Size = new System.Drawing.Size(130, 33);
             this.comboBoxNome.TabIndex = 16;
             // 
             // numericUpDown1
@@ -213,7 +218,7 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Vino
             0,
             0});
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 26);
+            this.numericUpDown1.Size = new System.Drawing.Size(120, 30);
             this.numericUpDown1.TabIndex = 20;
             this.numericUpDown1.Value = new decimal(new int[] {
             2015,
@@ -236,16 +241,6 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Vino
             this.tableLayoutPanel2.Size = new System.Drawing.Size(181, 108);
             this.tableLayoutPanel2.TabIndex = 22;
             // 
-            // comboBoxBottiglie
-            // 
-            this.comboBoxBottiglie.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.comboBoxBottiglie.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxBottiglie.FormattingEnabled = true;
-            this.comboBoxBottiglie.Location = new System.Drawing.Point(25, 3);
-            this.comboBoxBottiglie.Name = "comboBoxBottiglie";
-            this.comboBoxBottiglie.Size = new System.Drawing.Size(130, 28);
-            this.comboBoxBottiglie.TabIndex = 18;
-            // 
             // textBox5
             // 
             this.textBox5.BackColor = System.Drawing.SystemColors.Desktop;
@@ -256,14 +251,25 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Vino
             this.textBox5.Location = new System.Drawing.Point(3, 57);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
+            this.textBox5.ReadOnly = true;
             this.textBox5.Size = new System.Drawing.Size(175, 48);
             this.textBox5.TabIndex = 28;
             this.textBox5.Text = "Inserire solo Numeri interi altrimentiimenti non si potrà procedere";
             this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // comboBoxBottiglie
+            // 
+            this.comboBoxBottiglie.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.comboBoxBottiglie.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxBottiglie.FormattingEnabled = true;
+            this.comboBoxBottiglie.Location = new System.Drawing.Point(25, 3);
+            this.comboBoxBottiglie.Name = "comboBoxBottiglie";
+            this.comboBoxBottiglie.Size = new System.Drawing.Size(130, 33);
+            this.comboBoxBottiglie.TabIndex = 18;
+            // 
             // FormAggiungiVino
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Desktop;
             this.ClientSize = new System.Drawing.Size(1123, 228);

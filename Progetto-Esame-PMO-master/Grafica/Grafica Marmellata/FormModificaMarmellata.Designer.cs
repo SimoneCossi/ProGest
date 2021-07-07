@@ -105,6 +105,7 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Marmellata
             this.textBox14.Location = new System.Drawing.Point(9, 3);
             this.textBox14.Multiline = true;
             this.textBox14.Name = "textBox14";
+            this.textBox14.ReadOnly = true;
             this.textBox14.Size = new System.Drawing.Size(163, 53);
             this.textBox14.TabIndex = 18;
             this.textBox14.Text = "Nr di Barattoli Venduti";
@@ -122,7 +123,7 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Marmellata
             0,
             0});
             this.numericUpDownNrBottiglie.Name = "numericUpDownNrBottiglie";
-            this.numericUpDownNrBottiglie.Size = new System.Drawing.Size(96, 25);
+            this.numericUpDownNrBottiglie.Size = new System.Drawing.Size(96, 30);
             this.numericUpDownNrBottiglie.TabIndex = 20;
             // 
             // ButtonApplica
@@ -190,9 +191,10 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Marmellata
             this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox8.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox8.Location = new System.Drawing.Point(9, 17);
+            this.textBox8.Location = new System.Drawing.Point(9, 14);
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(163, 23);
+            this.textBox8.ReadOnly = true;
+            this.textBox8.Size = new System.Drawing.Size(163, 29);
             this.textBox8.TabIndex = 9;
             this.textBox8.Text = "Nr di Barattoli";
             this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -237,6 +239,7 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Marmellata
             this.textBox5.Location = new System.Drawing.Point(3, 3);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
+            this.textBox5.ReadOnly = true;
             this.textBox5.Size = new System.Drawing.Size(175, 52);
             this.textBox5.TabIndex = 9;
             this.textBox5.Text = "Dimensione Barattolo";
@@ -279,9 +282,10 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Marmellata
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox3.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox3.Location = new System.Drawing.Point(9, 17);
+            this.textBox3.Location = new System.Drawing.Point(9, 14);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(163, 23);
+            this.textBox3.ReadOnly = true;
+            this.textBox3.Size = new System.Drawing.Size(163, 29);
             this.textBox3.TabIndex = 9;
             this.textBox3.Text = "Anno";
             this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -323,9 +327,10 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Marmellata
             this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox6.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox6.Location = new System.Drawing.Point(9, 17);
+            this.textBox6.Location = new System.Drawing.Point(9, 14);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(163, 23);
+            this.textBox6.ReadOnly = true;
+            this.textBox6.Size = new System.Drawing.Size(163, 29);
             this.textBox6.TabIndex = 9;
             this.textBox6.Text = "Frutto";
             this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;

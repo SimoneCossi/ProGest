@@ -84,7 +84,7 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Vigneto
             0,
             0});
             this.numericUpDownNrVitiMorte.Name = "numericUpDownNrVitiMorte";
-            this.numericUpDownNrVitiMorte.Size = new System.Drawing.Size(120, 26);
+            this.numericUpDownNrVitiMorte.Size = new System.Drawing.Size(120, 30);
             this.numericUpDownNrVitiMorte.TabIndex = 21;
             // 
             // comboBoxNome
@@ -94,7 +94,7 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Vigneto
             this.comboBoxNome.FormattingEnabled = true;
             this.comboBoxNome.Location = new System.Drawing.Point(51, 108);
             this.comboBoxNome.Name = "comboBoxNome";
-            this.comboBoxNome.Size = new System.Drawing.Size(130, 28);
+            this.comboBoxNome.Size = new System.Drawing.Size(130, 33);
             this.comboBoxNome.TabIndex = 17;
             // 
             // textBox1
@@ -107,6 +107,7 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Vigneto
             this.textBox1.Location = new System.Drawing.Point(3, 39);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(225, 26);
             this.textBox1.TabIndex = 12;
             this.textBox1.Text = "Nome del Vigneto";
@@ -122,6 +123,7 @@ namespace Progetto_Esame_PMO.Grafica.Grafica_Vigneto
             this.textBox6.Location = new System.Drawing.Point(235, 36);
             this.textBox6.Multiline = true;
             this.textBox6.Name = "textBox6";
+            this.textBox6.ReadOnly = true;
             this.textBox6.Size = new System.Drawing.Size(225, 32);
             this.textBox6.TabIndex = 11;
             this.textBox6.Text = "Nr Viti Morte";

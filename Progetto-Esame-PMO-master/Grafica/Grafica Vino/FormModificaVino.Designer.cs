@@ -116,7 +116,7 @@ namespace Progetto_Esame_PMO.Grafica
             this.textBox5.ForeColor = System.Drawing.SystemColors.Window;
             this.textBox5.Location = new System.Drawing.Point(3, 87);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(183, 22);
+            this.textBox5.Size = new System.Drawing.Size(183, 27);
             this.textBox5.TabIndex = 8;
             this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -130,6 +130,7 @@ namespace Progetto_Esame_PMO.Grafica
             this.textBox10.Location = new System.Drawing.Point(3, 27);
             this.textBox10.Multiline = true;
             this.textBox10.Name = "textBox10";
+            this.textBox10.ReadOnly = true;
             this.textBox10.Size = new System.Drawing.Size(183, 30);
             this.textBox10.TabIndex = 18;
             this.textBox10.Text = "Nr di Bottiglie";
@@ -160,6 +161,7 @@ namespace Progetto_Esame_PMO.Grafica
             this.textBox8.Location = new System.Drawing.Point(3, 29);
             this.textBox8.Multiline = true;
             this.textBox8.Name = "textBox8";
+            this.textBox8.ReadOnly = true;
             this.textBox8.Size = new System.Drawing.Size(183, 26);
             this.textBox8.TabIndex = 18;
             this.textBox8.Text = "Tipologia";
@@ -174,7 +176,7 @@ namespace Progetto_Esame_PMO.Grafica
             this.textBox3.ForeColor = System.Drawing.SystemColors.Window;
             this.textBox3.Location = new System.Drawing.Point(3, 87);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(183, 22);
+            this.textBox3.Size = new System.Drawing.Size(183, 27);
             this.textBox3.TabIndex = 8;
             this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -204,6 +206,7 @@ namespace Progetto_Esame_PMO.Grafica
             this.textBox9.Location = new System.Drawing.Point(3, 27);
             this.textBox9.Multiline = true;
             this.textBox9.Name = "textBox9";
+            this.textBox9.ReadOnly = true;
             this.textBox9.Size = new System.Drawing.Size(183, 29);
             this.textBox9.TabIndex = 18;
             this.textBox9.Text = "Vigneto Utilizzato";
@@ -218,7 +221,7 @@ namespace Progetto_Esame_PMO.Grafica
             this.textBox4.ForeColor = System.Drawing.SystemColors.Window;
             this.textBox4.Location = new System.Drawing.Point(3, 87);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(183, 22);
+            this.textBox4.Size = new System.Drawing.Size(183, 27);
             this.textBox4.TabIndex = 8;
             this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -244,9 +247,10 @@ namespace Progetto_Esame_PMO.Grafica
             this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox7.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox7.Location = new System.Drawing.Point(3, 30);
+            this.textBox7.Location = new System.Drawing.Point(3, 27);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(183, 23);
+            this.textBox7.ReadOnly = true;
+            this.textBox7.Size = new System.Drawing.Size(183, 29);
             this.textBox7.TabIndex = 18;
             this.textBox7.Text = "Anno";
             this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -260,7 +264,7 @@ namespace Progetto_Esame_PMO.Grafica
             this.textBox2.ForeColor = System.Drawing.SystemColors.Window;
             this.textBox2.Location = new System.Drawing.Point(3, 87);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(183, 22);
+            this.textBox2.Size = new System.Drawing.Size(183, 27);
             this.textBox2.TabIndex = 8;
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -301,9 +305,10 @@ namespace Progetto_Esame_PMO.Grafica
             this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox6.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox6.Location = new System.Drawing.Point(3, 30);
+            this.textBox6.Location = new System.Drawing.Point(3, 27);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(183, 23);
+            this.textBox6.ReadOnly = true;
+            this.textBox6.Size = new System.Drawing.Size(183, 29);
             this.textBox6.TabIndex = 9;
             this.textBox6.Text = "Nome del Vino";
             this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -335,6 +340,7 @@ namespace Progetto_Esame_PMO.Grafica
             this.textBox12.Location = new System.Drawing.Point(3, 135);
             this.textBox12.Multiline = true;
             this.textBox12.Name = "textBox12";
+            this.textBox12.ReadOnly = true;
             this.textBox12.Size = new System.Drawing.Size(183, 32);
             this.textBox12.TabIndex = 19;
             this.textBox12.Text = "Scrivere solo se si vuole modificare il nome";
@@ -347,9 +353,10 @@ namespace Progetto_Esame_PMO.Grafica
             this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox11.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox11.Location = new System.Drawing.Point(3, 21);
+            this.textBox11.Location = new System.Drawing.Point(3, 18);
             this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(183, 23);
+            this.textBox11.ReadOnly = true;
+            this.textBox11.Size = new System.Drawing.Size(183, 29);
             this.textBox11.TabIndex = 10;
             this.textBox11.Text = "Nuovo nome del vino";
             this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -390,6 +397,7 @@ namespace Progetto_Esame_PMO.Grafica
             this.textBox14.Location = new System.Drawing.Point(3, 15);
             this.textBox14.Multiline = true;
             this.textBox14.Name = "textBox14";
+            this.textBox14.ReadOnly = true;
             this.textBox14.Size = new System.Drawing.Size(183, 55);
             this.textBox14.TabIndex = 18;
             this.textBox14.Text = "Nr di Bottiglie Vendute";
@@ -407,7 +415,7 @@ namespace Progetto_Esame_PMO.Grafica
             0,
             0});
             this.numericUpDownNrBottiglie.Name = "numericUpDownNrBottiglie";
-            this.numericUpDownNrBottiglie.Size = new System.Drawing.Size(96, 25);
+            this.numericUpDownNrBottiglie.Size = new System.Drawing.Size(96, 30);
             this.numericUpDownNrBottiglie.TabIndex = 20;
             // 
             // ButtonElimina

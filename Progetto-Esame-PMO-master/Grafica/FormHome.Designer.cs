@@ -38,8 +38,8 @@ namespace Progetto_Esame_PMO
             this.NomeProdotto = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Quantita = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanelBase.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -100,9 +100,9 @@ namespace Progetto_Esame_PMO
             this.VisualizzaTabella.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.VisualizzaTabella.ForeColor = System.Drawing.SystemColors.InfoText;
             this.VisualizzaTabella.FormattingEnabled = true;
-            this.VisualizzaTabella.Location = new System.Drawing.Point(234, 34);
+            this.VisualizzaTabella.Location = new System.Drawing.Point(234, 32);
             this.VisualizzaTabella.Name = "VisualizzaTabella";
-            this.VisualizzaTabella.Size = new System.Drawing.Size(140, 28);
+            this.VisualizzaTabella.Size = new System.Drawing.Size(140, 34);
             this.VisualizzaTabella.TabIndex = 1;
             // 
             // textBox1
@@ -115,6 +115,7 @@ namespace Progetto_Esame_PMO
             this.textBox1.Location = new System.Drawing.Point(26, 35);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(174, 27);
             this.textBox1.TabIndex = 2;
             this.textBox1.Text = "Scegliere la tabella";
@@ -162,21 +163,6 @@ namespace Progetto_Esame_PMO
             this.tableLayoutPanel2.Size = new System.Drawing.Size(269, 309);
             this.tableLayoutPanel2.TabIndex = 9;
             // 
-            // textBox2
-            // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox2.BackColor = System.Drawing.SystemColors.Desktop;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox2.Location = new System.Drawing.Point(3, 50);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(263, 54);
-            this.textBox2.TabIndex = 3;
-            this.textBox2.Text = "Lista dei Prodotti con priorità di vendita";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // textBox3
             // 
             this.textBox3.BackColor = System.Drawing.SystemColors.Desktop;
@@ -187,12 +173,29 @@ namespace Progetto_Esame_PMO
             this.textBox3.Location = new System.Drawing.Point(3, 157);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
             this.textBox3.Size = new System.Drawing.Size(263, 149);
             this.textBox3.TabIndex = 4;
             this.textBox3.Text = "\r\nVerranno visualizzati in ordine:\r\n5 vini\r\n3 vigneti\r\n3 marmellate\r\n\r\nquesto poi" +
     "chè si da la priorità di vendita ai vini, poi ai vigneti e infine alle marmellat" +
     "e";
             this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox2.BackColor = System.Drawing.SystemColors.Desktop;
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.ForeColor = System.Drawing.SystemColors.Window;
+            this.textBox2.Location = new System.Drawing.Point(3, 50);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.Size = new System.Drawing.Size(263, 54);
+            this.textBox2.TabIndex = 3;
+            this.textBox2.Text = "Lista dei Prodotti con priorità di vendita";
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // FormHome
             // 

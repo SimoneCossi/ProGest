@@ -64,7 +64,7 @@ namespace Progetto_Esame_PMO
             {
                 ListViewItem entryListItem = listViewPriorita.Items.Add(w.SelectElement(vigneti_p[i].ToString(), "nome"));
                 entryListItem.UseItemStyleForSubItems = true;
-                ListViewItem.ListViewSubItem quantita = entryListItem.SubItems.Add(w.SelectElement(marmellate_p[i].ToString(), "nrvitimorte"));
+                ListViewItem.ListViewSubItem quantita = entryListItem.SubItems.Add(w.SelectElement(vigneti_p[i].ToString(), "nrvitimorte"));
             }
             // ciclo che aggiunge i 3 marmellate con maggiore priorità di vendita alla listview
             for (int i = 0; (i < 3) & (i < marmellate_p.Count); i++)
