@@ -1,7 +1,7 @@
 # ProGest - Progetto PMO
 
 - Sviluppatore:
-**Cossi Simone, mat. 290796
+##Cossi Simone, mat. 290796
 
 ------------
 
