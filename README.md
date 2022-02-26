@@ -18,6 +18,7 @@ Management application in Windows Forms.
 
 # ProGest
 Progetto d'esame universitario del corso di Programmazione e Modellazione a Oggetti.
+
 Applicazione gestionale in Windows Form.
 
 - Sviluppatore: Cossi Simone
